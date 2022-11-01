@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-fsx-volumes.html 
+keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
+summary: 'Vous pouvez gérer des volumes, des clones et des snapshots, et modifier des règles de hiérarchisation pour FSX pour ONTAP à l"aide de BlueXP.' 
+---
+= Gestion des volumes pour Amazon FSX pour ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher et gérer des volumes, des clones et des snapshots, et modifier des règles de hiérarchisation pour FSX pour ONTAP à l'aide de BlueXP.
+
+
+
+== Afficher les détails du volume
+
+Une fois le volume créé, vous pouvez afficher les détails de la configuration.
+
+. Ouvrir l'environnement de travail.
++
+
+NOTE: Vous pouvez passer le curseur de la souris sur le nom du volume pour afficher le type de volume.
+
+. Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de volume*.
+. Sélectionnez *Afficher les détails du volume*.
+
+
+
+
+== Modifier les volumes
+
+Une fois que vous avez créé un volume, vous pouvez le modifier à tout moment.
+
+.Étapes
+. Ouvrir l'environnement de travail.
+. Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de volume*.
+. Sélectionnez *Modifier les paramètres de volume*.
++
+.. Pour NFS, vous pouvez modifier la taille et les balises.
+.. Pour CIFS, vous pouvez modifier le nom du partage, les utilisateurs, les autorisations et la stratégie Snapshot selon vos besoins.
+
+
+. Sélectionnez *appliquer*.
+
+
+
+
+== Clones de volumes
+
+Une fois que vous avez créé un volume, vous pouvez créer un nouveau volume en lecture/écriture à partir d'une nouvelle copie Snapshot.
+
+.Étapes
+. Ouvrir l'environnement de travail.
+. Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de volume*.
+. Sélectionnez *Cloner le volume*.
+. Entrez un nom pour le volume cloné.
+. Sélectionnez *Clone*.
+
+
+
+
+== Gérer les copies Snapshot
+
+Les copies Snapshot fournissent une copie instantanée de votre volume. Création de copies Snapshot et restauration des données sur un nouveau volume.
+
+.Étapes
+. Ouvrir l'environnement de travail.
+. Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de protection*.
+. Sélectionnez l'une des options disponibles pour gérer les copies Snapshot :
++
+** *Créer une copie snapshot*
+** *Restaurer à partir d'une copie snapshot*
+
+
+. Suivez les invites pour terminer l'action sélectionnée.
+
+
+
+
+== Modifiez la stratégie de hiérarchisation
+
+Modifiez la règle de Tiering du volume.
+
+.Étapes
+. Ouvrir l'environnement de travail.
+. Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions avancées*.
+. Sélectionnez *Modifier la règle de hiérarchisation*.
+. Sélectionnez une nouvelle stratégie de hiérarchisation de volume et cliquez sur *Modifier*.
+
+
+
+
+== Réplication et synchronisation des données
+
+Vous pouvez répliquer des données entre différents environnements de stockage à l'aide de BlueXP. Pour configurer FSX pour la réplication ONTAP, reportez-vous à la section https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["réplication des données entre les systèmes"^].
+
+Vous pouvez créer des relations de synchronisation à l'aide de Cloud Sync dans BlueXP. Pour configurer des relations de synchronisation, voir https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html["création de relations synchronisées"^].
+
+
+
+== Supprimez des volumes
+
+Supprimez les volumes dont vous n'avez plus besoin.
+
+Vous ne pouvez pas supprimer un volume qui faisait auparavant partie d'une relation SnapMirror en utilisant BlueXP. Les volumes SnapMirror doivent être supprimés via la console de gestion AWS ou l'interface de ligne de commande.
+
+.Étapes
+. Ouvrir l'environnement de travail.
+. Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de volume*.
+. Sélectionnez *Supprimer le volume*.
+. Entrez le nom de l'environnement de travail et confirmez la suppression du volume. Il peut prendre jusqu'à une heure avant que le volume ne soit complètement supprimé de BlueXP.
+
+
+
+NOTE: Si vous essayez de supprimer un volume cloné, une erreur s'affiche.

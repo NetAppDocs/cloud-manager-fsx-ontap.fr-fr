@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: start/task-getting-started-fsx.html 
+keywords: amazon fsx for ontap, fsx, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, vpc, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, bluexp website, get started, network, vpn, tier, tiering, storage tier, data tier, granting, permissions, policy, iam policy, policies, attach, iam user, access key, secret key, keys, sign up, cloud manager, create 
+summary: Lancez-vous avec Amazon FSX pour ONTAP en quelques étapes. 
+---
+= Commencez avec Amazon FSX pour ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lancez-vous avec Amazon FSX pour ONTAP en quelques étapes.
+
+Vous pouvez commencer à utiliser FSX pour ONTAP en quelques étapes seulement.
+
+[role="quick-margin-para"]
+Vous devez créer un environnement de travail Amazon FSX pour ONTAP avant d'ajouter des volumes. Vous devez le faire link:../requirements/task-setting-up-permissions-fsx.html["Configurez un rôle IAM qui permet au service BlueXP SaaS de prendre en charge le rôle"].
+
+[role="quick-margin-para"]
+Vous devez avoir un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Connecteur pour AWS"^] Pour ouvrir l'environnement de travail FSX pour ONTAP, créez des volumes ou effectuez d'autres actions. Lorsqu'un connecteur est nécessaire, BlueXP vous invite si un connecteur n'est pas déjà ajouté.
+
+[role="quick-margin-para"]
+Vous pouvez créer FSX pour les volumes ONTAP à l'aide de BlueXP.
+
+[role="quick-margin-para"]
+Utilisez BlueXP pour gérer vos volumes et configurer des services supplémentaires tels que la réplication, Cloud Sync et Data Sense.
+
+.Liens connexes
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Création d'un connecteur depuis BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["Lancement d'un connecteur depuis AWS Marketplace"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installation du logiciel du connecteur sur un hôte Linux"^]
+

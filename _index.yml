@@ -1,0 +1,46 @@
+---
+indexpage:
+  lead: Amazon FSX pour NetApp ONTAP étend les fonctionnalités de ONTAP à un service
+    géré AWS natif pour offrir une expérience de cloud hybride cohérente. Cette documentation
+    explique comment gérer FSX pour ONTAP à l'aide de NetApp BlueXP.
+  tiles:
+  - title: Commencez
+    links:
+    - title: Notes de mise à jour
+      url: "/whats-new.html"
+    - title: En savoir plus sur Amazon FSX pour ONTAP
+      url: "/start/concept-fsx-aws.html"
+    - title: Démarrage rapide
+      url: "/start/task-getting-started-fsx.html"
+  - title: De formation
+    links:
+    - title: Configurez les autorisations
+      url: "/requirements/task-setting-up-permissions-fsx.html"
+    - title: Règles de groupe de sécurité
+      url: "/requirements/reference-security-groups-fsx.html"
+  - title: Utilisez Amazon FSX pour ONTAP
+    links:
+    - title: Créer ou découvrir un environnement de travail
+      url: "/use/task-creating-fsx-working-environment.html"
+    - title: Gérer l'environnement de travail
+      url: "/use/task-manage-working-environment.html"
+    - title: Création et montage de volumes
+      url: "/use/task-add-fsx-volumes.html"
+    - title: Gérez les volumes et les services de données
+      url: "/use/task-manage-fsx-volumes.html"
+    - title: Configuration hôte NVMe et iSCSI
+      url: https://docs.netapp.com/us-en/ontap-sanhost/
+  - title: Connaissances et support
+    links:
+    - title: S'inscrire pour obtenir de l'aide
+      url: "/support/task-support-registration.html"
+    - title: Obtenez de l'aide
+      url: "/support/task-get-help.html"
+  - title: Communauté sur les blogs
+    links:
+    - title: Communauté NetApp
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Blog Cloud Central
+      url: https://cloud.netapp.com/blog
+    - title: Webinaires sur le cloud
+      url: https://cloud.netapp.com/events

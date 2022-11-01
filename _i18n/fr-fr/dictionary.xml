@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="ca9f06fa1a00f01b3d6a92ff7e6556ff" category="summary">Amazon FSX pour NetApp ONTAP étend les fonctionnalités de ONTAP à un service géré AWS natif pour offrir une expérience de cloud hybride cohérente. Cette documentation explique comment gérer FSX pour ONTAP à l'aide de NetApp BlueXP.</block>
+  <block id="e7d8c0779e86c7c2edb0791a45906d17" category="doc">Documentation Amazon FSX pour ONTAP</block>
+  <block id="603ec1431df96260c06b8b0fc539dca4" category="summary">Amazon FSX pour ONTAP est un service entièrement géré qui permet aux clients de lancer et d'exécuter des systèmes de fichiers optimisés par le système d'exploitation du stockage ONTAP de NetApp. FSX pour ONTAP offre les mêmes fonctionnalités, performances et administration que les clients NetApp utilisent l'environnement sur site, avec la simplicité, l'agilité, la sécurité et l'évolutivité d'un service AWS natif.</block>
+  <block id="43ece0944414298a29b4d72bc56373f1" category="doc">En savoir plus sur Amazon FSX pour ONTAP</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX pour ONTAP</block>
+  <block id="2373ee05a5847e8f92338b8835c8a17b" category="paragraph"><block ref="96821e1e659978c978732a5dc24298ac" category="inline-link-macro-rx"></block> Est un service entièrement géré qui permet aux clients de lancer et d'exécuter des systèmes de fichiers optimisés par le système d'exploitation du stockage ONTAP de NetApp. FSX pour ONTAP offre les mêmes fonctionnalités, performances et administration que les clients NetApp utilisent l'environnement sur site, avec la simplicité, l'agilité, la sécurité et l'évolutivité d'un service AWS natif.</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Caractéristiques</block>
+  <block id="5e63cf07e8c4e2bc02fec4b907bfcc00" category="list-text">Nul besoin de configurer ou de gérer des périphériques, logiciels ou sauvegardes de stockage.</block>
+  <block id="620d7e4da65c27b65a66bca15517b802" category="list-text">Prise en charge des protocoles CIFS, NFSv3, NFSv4.x et SMB v2.0 - v3.1.1.</block>
+  <block id="f6ad83cb7f527e383e392f709849a098" category="list-text">Capacité de stockage des données économique et quasi illimitée sur le Tier de stockage disponible rarement utilisé (IA).</block>
+  <block id="3c36508c8697f7ec7a94803545518d69" category="list-text">Exécution certifiée sur des applications sensibles à la latence, y compris Oracle RAC.</block>
+  <block id="6c2a9ed4ea140413912e894a10672e01" category="list-text">Vous avez le choix entre un bundle et une facturation à l'utilisation.</block>
+  <block id="6a7ebeee8a870484e91de7ed605595e5" category="section-title">Fonctions supplémentaires dans BlueXP</block>
+  <block id="61d1931826c6b4bafae8f3e532759004" category="list-text">En utilisant un connecteur dans AWS et BlueXP (anciennement Cloud Manager), vous pouvez créer et gérer des volumes, répliquer des données et intégrer FSX pour ONTAP avec les services cloud NetApp, comme Data Sense et Cloud Sync.</block>
+  <block id="d59048f21fd887ad520398ce677be586" category="inline-link">En savoir plus &gt;&gt;</block>
+  <block id="d9bf9116e04a89e455600416ad7872f3" category="list-text">Avec la technologie d'intelligence artificielle (IA), Cloud Data Sense peut vous aider à comprendre le contexte des données et à identifier les données sensibles qui résident dans votre FSX pour les comptes ONTAP.<block ref="ff015941fa4b0cfada66f8159ed80c63" category="inline-link-rx"></block>.</block>
+  <block id="1f944a9ec2785c18a692aeedf9839548" category="list-text">NetApp Cloud Sync automatise la migration des données vers n'importe quelle cible, dans le cloud ou sur site.<block ref="0d960aec46349f597fec0ba1ad479bc2" category="inline-link-rx"></block></block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Le coût</block>
+  <block id="8bffb197ac66e59166722f267ae2aa89" category="inline-link">Guide de mise en route d'Amazon FSX pour ONTAP</block>
+  <block id="2e1fca4dcaae8d35c81661aec02958b2" category="paragraph">Votre compte FSX pour ONTAP est géré par AWS et non par BlueXP.<block ref="8ceb48ebb1fa83d69a24f299e3fde40a" category="inline-link-rx"></block></block>
+  <block id="bcde5e61b57c391c5832e7ea9a5bf2b1" category="paragraph">Des frais supplémentaires sont nécessaires pour l'utilisation du connecteur dans AWS et des services de données en option tels que Cloud Sync et Data Sense.</block>
+  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">Régions prises en charge</block>
+  <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">Affichez les régions Amazon prises en charge.</block>
+  <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">Obtenir de l'aide</block>
+  <block id="adae5e92a515a3174e9058a6b8179a41" category="paragraph">Amazon FSX pour ONTAP est une solution AWS propriétaire. Pour toute question ou tout problème de support technique concernant votre système de fichiers AWS FSX, votre infrastructure ou toute solution AWS utilisant ce service, utilisez le centre de support de votre console AWS pour ouvrir un dossier de demande de support vers AWS. Sélectionnez le service “FSX pour ONTAP” et la catégorie appropriée. Fournissez les informations restantes nécessaires pour créer un dossier de demande de support AWS.</block>
+  <block id="c38a4c52c19f29b55ed16af8a145fb57" category="paragraph">Pour les questions générales spécifiques aux micro-services BlueXP ou BlueXP, vous pouvez commencer par le chat en ligne BlueXP.</block>
+  <block id="8ae3d71a6e8ab23cdfe061900ab42a08" category="paragraph">Pour les problèmes de support technique spécifiques à BlueXP ou aux micro-services, vous pouvez ouvrir un ticket de support NetApp à l'aide du numéro de série de votre compte BlueXP. Vous devez enregistrer votre numéro de série BlueXP pour activer le support.</block>
+  <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">Lancez-vous avec Amazon FSX pour ONTAP en quelques étapes.</block>
+  <block id="bf7ec532103402eaed4653738655f6ad" category="doc">Commencez avec Amazon FSX pour ONTAP</block>
+  <block id="fbda414afc779c9e1e46c45b74091adb" category="paragraph">Vous pouvez commencer à utiliser FSX pour ONTAP en quelques étapes seulement.</block>
+  <block id="d2f0ad44b51fbd3850fad8307ea16aa3" category="inline-link-macro">Configurez un rôle IAM qui permet au service BlueXP SaaS de prendre en charge le rôle</block>
+  <block id="0120a6985fd9a638c32bf88c75ec0802" category="paragraph">Vous devez créer un environnement de travail Amazon FSX pour ONTAP avant d'ajouter des volumes. Vous devez le faire <block ref="29f60f4dfe0d122f0f86f855f5d0bde2" category="inline-link-macro-rx"></block>.</block>
+  <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">Connecteur pour AWS</block>
+  <block id="d7d767395bf3ee01260b8e372bdc033a" category="paragraph">Vous devez avoir un<block ref="ee4793145cbadfb90a826d44d7b7a098" category="inline-link-rx"></block> Pour ouvrir l'environnement de travail FSX pour ONTAP, créez des volumes ou effectuez d'autres actions. Lorsqu'un connecteur est nécessaire, BlueXP vous invite si un connecteur n'est pas déjà ajouté.</block>
+  <block id="17a1b5c516ad7934395e8ea2d41f50ed" category="paragraph">Vous pouvez créer FSX pour les volumes ONTAP à l'aide de BlueXP.</block>
+  <block id="a4f149004152f60637fdf95cdc81a47d" category="paragraph">Utilisez BlueXP pour gérer vos volumes et configurer des services supplémentaires tels que la réplication, Cloud Sync et Data Sense.</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Liens connexes</block>
+  <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">Création d'un connecteur depuis BlueXP</block>
+  <block id="0d5f53ba40b365132e5ed55aeb13bafc" category="list-text"><block ref="0d5f53ba40b365132e5ed55aeb13bafc" category="inline-link-rx"></block></block>
+  <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">Lancement d'un connecteur depuis AWS Marketplace</block>
+  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
+  <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">Installation du logiciel du connecteur sur un hôte Linux</block>
+  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
+  <block id="9936779ebe4e0ac089fa89c319d5473b" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes que BlueXP et FSX pour ONTAP doivent fonctionner correctement. Vous pouvez vous référer aux ports à des fins de test ou si vous devez utiliser votre propre.</block>
+  <block id="e87d6ed459b274ad7c388e0797013c9f" category="doc">Règles de groupe de sécurité pour FSX pour ONTAP</block>
+  <block id="9f415057e43c73d4e37a0068a0ca9486" category="section-title">Règles pour FSX pour ONTAP</block>
+  <block id="a4f557d4dc5603464fae9d733ed96263" category="paragraph">Le groupe de sécurité FSX pour ONTAP requiert des règles entrantes et sortantes. Ce schéma illustre la configuration de la mise en réseau de la solution FSX pour ONTAP et les exigences des groupes de sécurité.</block>
+  <block id="804e1541ef4556a247ad9499202fb6e2" category="inline-image-macro">Schéma de la configuration FSX pour les groupes de sécurité ONTAP.</block>
+  <block id="bca6ab005ba14ce4d09f6862e9acbd0d" category="paragraph"><block ref="bca6ab005ba14ce4d09f6862e9acbd0d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="666efafa7314f1d36acc1873a7effea1" category="paragraph">Vous devez localiser les groupes de sécurité associés à Enis à l'aide de la console de gestion AWS.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
+  <block id="c92acc92060e36c3ae0a3a3122e468f4" category="list-text">Ouvrez le système de fichiers FSX pour ONTAP dans la console de gestion AWS et cliquez sur le lien ID du système de fichiers.</block>
+  <block id="d2d5e146dd6d2c739d48382f6d5819c9" category="inline-image-macro">Capture d'écran de l'ID du système de fichiers FSX dans la console de gestion AWS.</block>
+  <block id="74925aadd53e4f7b65df21759c37451d" category="paragraph"><block ref="74925aadd53e4f7b65df21759c37451d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5632127664c2b29ceeab7c876c04cb44" category="list-text">Dans l'onglet *réseau et sécurité*, cliquez sur l'ID de l'interface réseau pour le sous-réseau préféré ou de secours.</block>
+  <block id="6327ad0d858ec91f26ade294f909e613" category="inline-image-macro">Capture d'écran de la FSX pour l'ID ENI ONTAP.</block>
+  <block id="f737b6b92ce7095e05c485d6d1b3acfe" category="paragraph"><block ref="f737b6b92ce7095e05c485d6d1b3acfe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ffd35e1082660bfc05812c970b3ce90c" category="list-text">Cliquez sur le groupe de sécurité dans le tableau de l'interface réseau ou dans la section *Détails* de l'interface réseau.</block>
+  <block id="e3771f1e1acdf77c7948d3e7e2810d3c" category="inline-image-macro">Capture d'écran de l'ID de groupe de sécurité FSX pour ONTAP.</block>
+  <block id="29608e98541844ed43ec551876108d97" category="paragraph"><block ref="29608e98541844ed43ec551876108d97" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">Règles entrantes</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocole</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">Port</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">Objectif</block>
+  <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">Tous les protocoles ICMP</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">Tout</block>
+  <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="cell">Envoi d'une requête ping à l'instance</block>
+  <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="1960d6022dcb5a2b9a687d1f6cbd8931" category="cell">Accès depuis le connecteur à la LIF de gestion fsxadmin pour envoyer des appels API à FSX</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
+  <block id="68e68bb8029eb3e7ed079fea7b679d99" category="cell">Accès SSH à l'adresse IP du LIF de gestion de cluster ou d'un LIF de gestion de nœud</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
+  <block id="42309a274997c44da61b489d9df7edc8" category="cell">Appel de procédure à distance pour NFS</block>
+  <block id="e00da03b685a0dd18fb6a08af0923de0" category="cell">139</block>
+  <block id="f578101933ae5aa506411a00b33b06ec" category="cell">Session de service NetBIOS pour CIFS</block>
+  <block id="ff86b94aeb68e2de5387c9dbf865b3b9" category="cell">161-162</block>
+  <block id="e0215167b05004bf68d7d23d0a15605c" category="cell">Protocole de gestion de réseau simple</block>
+  <block id="67f7fb873eaf29526a11a9b7ac33bfac" category="cell">445</block>
+  <block id="100c97ce556d60c86e5d8b424c3ed3ad" category="cell">Microsoft SMB/CIFS sur TCP avec encadrement NetBIOS</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">658</block>
+  <block id="718b3fb251c2987c99ce9d2d23eb38b6" category="cell">Montage NFS</block>
+  <block id="b056eb1587586b71e2da9acfe4fbd19e" category="cell">749</block>
+  <block id="87b3695bfd6f672e2c7c4da7ca2b46a8" category="cell">Kerberos</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="02c69a3a7485c8d2f899c2eb58f8be50" category="cell">Démon du serveur NFS</block>
+  <block id="d54ce9de9df77c579775a7b6b1a4bdc0" category="cell">3260</block>
+  <block id="decc72453fd5881c6144ead65577abe0" category="cell">Accès iSCSI via le LIF de données iSCSI</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="3efa34cc491e9e34264231984db1c224" category="cell">Démon de verrouillage NFS</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="6e1768e34172523fffe5e878d95f0f1a" category="cell">Surveillance de l'état du réseau pour NFS</block>
+  <block id="b7a782741f667201b54880c925faec4b" category="cell">10000</block>
+  <block id="9f6c516b5f5492bbbe0bfa8167ac3c38" category="cell">Sauvegarde avec NDMP</block>
+  <block id="bf03faf089665754a8af5dce381a42ca" category="cell">11104</block>
+  <block id="0f98f191f6139c531c1435214b55de48" category="cell">Gestion des sessions de communication intercluster pour SnapMirror</block>
+  <block id="f0f07e680de407b0f12abf15bd520097" category="cell">11105</block>
+  <block id="d03bcbb93f8e29ffb08772b43b55d234" category="cell">Transfert de données SnapMirror à l'aide de LIF intercluster</block>
+  <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
+  <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049</block>
+  <block id="ec29b09319bcf28d103f2dda2dae3590" category="cell">Protocole NFS rquotad</block>
+  <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">Règles de sortie</block>
+  <block id="86c7c9c5b63a1a193b47895ff9b75eee" category="paragraph">Le groupe de sécurité prédéfini pour FSX pour ONTAP ouvre tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.</block>
+  <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">Règles de base pour les appels sortants</block>
+  <block id="901e926561772e4303bdb71ec6f8f7b5" category="paragraph">Le groupe de sécurité prédéfini pour FSX pour ONTAP inclut les règles sortantes suivantes.</block>
+  <block id="a3c775b853cb7264d143451380d3e164" category="cell">Tout le trafic sortant</block>
+  <block id="170100eb6e4338b75a2fc06f87f9e5a4" category="cell">Tous les protocoles TCP</block>
+  <block id="d78c51305ff97e9da7f4c5cb3d1d3453" category="cell">Tous les protocoles UDP</block>
+  <block id="e2f58f5baabc821fa8bdc13a96184016" category="section-title">Règles de sortie avancées</block>
+  <block id="5e1a521c9d06fa71faeacb00ad3819f7" category="paragraph">Il n'est pas nécessaire d'ouvrir des ports spécifiques pour le médiateur ou entre les nœuds de FSX pour ONTAP.</block>
+  <block id="d0fb2d0bd8bf6909549b5e1a987f783c" category="admonition">La source est l'interface (adresse IP) du système FSX pour ONTAP.</block>
+  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Service</block>
+  <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">Source</block>
+  <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">Destination</block>
+  <block id="4fbbbcdfcdfad5270a20167c67509f0b" category="cell">Active Directory</block>
+  <block id="2a38a4a9316c49e5a833517c45d31070" category="cell">88</block>
+  <block id="e2578ec54f85b5b6333c94364b756a1c" category="cell">FRV de gestion des nœuds</block>
+  <block id="b81acdd12d819432acb7f548eb3359be" category="cell">Forêt Active Directory</block>
+  <block id="fa0b1696f093aa6d80fa11d7607fcf3d" category="cell">Authentification Kerberos V.</block>
+  <block id="3988c7f88ebcb58c6ce932b957b6f332" category="cell">137</block>
+  <block id="a5284329103adcae2bd4f84ad4e5c162" category="cell">Service de noms NetBIOS</block>
+  <block id="013d407166ec4fa56eb1e1f8cbe183b9" category="cell">138</block>
+  <block id="f50f261c93b1d23352fa830e183dc6ad" category="cell">Service de datagrammes NetBIOS</block>
+  <block id="2aa976707cd5d2da05a9dae859536870" category="cell">Session de service NetBIOS</block>
+  <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP ET UDP</block>
+  <block id="c86a7ee3d8ef0b551ed58e354a836f2b" category="cell">389</block>
+  <block id="2363dee608bcd9f6ce7f980bfdad5789" category="cell">LDAP</block>
+  <block id="f1b6f2857fb6d44dd73c7041e0aa0f19" category="cell">464</block>
+  <block id="18eb444b6b771bcc91c4997659263d7d" category="cell">Modification et définition du mot de passe Kerberos V (SET_CHANGE)</block>
+  <block id="7f54d18f39188eef294de01d335410b6" category="cell">Administration des clés Kerberos</block>
+  <block id="fcf186ee373ced14cf707bef511852d3" category="cell">Modification et définition du mot de passe Kerberos V (RPCSEC_GSS)</block>
+  <block id="6d9f458ee15a53b8195aff0ff180a97c" category="cell">LIF de données (NFS, CIFS, iSCSI)</block>
+  <block id="eebce435de7129d8316b4c6a0e9f9fcc" category="cell">FRV de données (NFS, CIFS)</block>
+  <block id="b6e33b393b9cea9f4b5807f4d2cdf335" category="cell">Modification et définition du mot de passe Kerberos V (RPCSEC_GSS)</block>
+  <block id="a58f484608b0d692f1839295a398638d" category="cell">Sauvegarde vers S3</block>
+  <block id="999028872cfff7ae8ee330a33cbd3874" category="cell">5010</block>
+  <block id="54f7d853bcd07992f133218c21a038be" category="cell">FRV InterCluster</block>
+  <block id="55de3994e99aa970c849c53bc4429da9" category="cell">Sauvegarder le terminal ou restaurer le terminal</block>
+  <block id="4c62d4e66380262ec50ccc7b5d1acc02" category="cell">Des opérations de sauvegarde et de restauration pour la fonctionnalité Backup vers S3</block>
+  <block id="54201c55d2bdc7a9e19d9e032d8c0ede" category="cell">DHCP</block>
+  <block id="a3f390d88e4c41f2747bfa2f1b5f87db" category="cell">68</block>
+  <block id="74d297edd733ae756164d870a3d2f03f" category="cell">Client DHCP pour la première configuration</block>
+  <block id="0feb3d8c92089db9cb12a059ed24887e" category="cell">DHCPS</block>
+  <block id="735b90b4568125ed6c3f678819b6e058" category="cell">67</block>
+  <block id="88affaeab6cd17bcddbccca01098cf9b" category="cell">Serveur DHCP</block>
+  <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="cell">DNS</block>
+  <block id="d82c8d1619ad8176d665453cfb2e55f0" category="cell">53</block>
+  <block id="b0ddb9a92b68188222c131b7e0574f48" category="cell">FRV de gestion des nœuds et FRV de données (NFS, CIFS)</block>
+  <block id="aae155889087fca42368d9fab8b54ee6" category="cell">NDMP</block>
+  <block id="81da9c1cda736bbbff7737e1ccec2d84" category="cell">18600-18699</block>
+  <block id="ed50214bfedbe04d48e6bd8cc239ce46" category="cell">Serveurs de destination</block>
+  <block id="4414d24afb3e6422813f5bc1dfcc2a8f" category="cell">Copie NDMP</block>
+  <block id="c2239a92bde29f0a9f9173193cc2fe00" category="cell">SMTP</block>
+  <block id="8e296a067a37563370ded05f5a3bf3ec" category="cell">25</block>
+  <block id="ef860b6ef144db3d9fdffc1170a30575" category="cell">Serveur de messagerie</block>
+  <block id="89f77914d604e82953b4d93ead2ac4d4" category="cell">Les alertes SMTP peuvent être utilisées pour AutoSupport</block>
+  <block id="305af65222ed3fff91f5c8bcdfe17162" category="cell">SNMP</block>
+  <block id="bd4c9ab730f5513206b999ec0d90d1fb" category="cell">161</block>
+  <block id="179d1420741d9e1a433e0f60c9f18ff1" category="cell">Serveur de surveillance</block>
+  <block id="a59e525e47c5c408e5fe28ddc631c55c" category="cell">Surveillance par des interruptions SNMP</block>
+  <block id="82aa4b0af34c2313a562076992e50aa3" category="cell">162</block>
+  <block id="794cb725c5631ad99b5b7c000307f0df" category="cell">SnapMirror</block>
+  <block id="928bd5c4260637c2acb46ce8c05c8237" category="cell">Baies de stockage inter-clusters ONTAP</block>
+  <block id="ba9466624e66e8efa9852c49cc227e4d" category="cell">Transfert de données SnapMirror</block>
+  <block id="6da6e44dc9987246944fdf9de3d4e794" category="cell">Syslog</block>
+  <block id="59b90e1005a220e2ebc542eb9d950b1e" category="cell">514</block>
+  <block id="74082482ea0cad59170e3d4dce025b4e" category="cell">Serveur Syslog</block>
+  <block id="a21848ca8e1b04c74552ca38f4284f2b" category="cell">Messages de transfert syslog</block>
+  <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Règles pour le connecteur</block>
+  <block id="0fbb894005047753551829b93d408eac" category="paragraph">Le groupe de sécurité du connecteur nécessite à la fois des règles entrantes et sortantes.</block>
+  <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">Fournit un accès SSH à l'hôte du connecteur</block>
+  <block id="293c9ea246ff9985dc6f62a650f78986" category="cell">HTTP</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="cell">80</block>
+  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">Fournit un accès HTTP depuis les navigateurs Web du client vers l'interface utilisateur locale et les connexions à partir de Cloud Data SENSE</block>
+  <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale</block>
+  <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
+  <block id="187604dd1244abc6ff03471775e9f32d" category="cell">Fournit l'instance Cloud Data SENSE avec un accès Internet si votre réseau AWS n'utilise pas de NAT ou de proxy</block>
+  <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Le groupe de sécurité prédéfini pour le connecteur ouvre tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.</block>
+  <block id="422c84262f431352e9da45084016a52c" category="paragraph">Le groupe de sécurité prédéfini pour le connecteur inclut les règles de trafic sortant suivantes.</block>
+  <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utiliser les informations suivantes pour ouvrir uniquement les ports requis pour la communication sortante par le connecteur.</block>
+  <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">L'adresse IP source est l'hôte du connecteur.</block>
+  <block id="03b9930526cd7e3fa4aafa64244d7957" category="cell">Modification et définition du mot de passe de Kerberos V Active Directory (RPCSEC_GSS)</block>
+  <block id="241b5fab8e737eaa79c543efe7307059" category="cell">Appels API et AutoSupport</block>
+  <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">LIF de gestion de cluster ONTAP et Internet sortant</block>
+  <block id="756da060e5d58870fc2d28d4b7bc9a45" category="cell">API appelle AWS et ONTAP et envoie des messages AutoSupport à NetApp</block>
+  <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">Appels API</block>
+  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
+  <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">Appels d'API vers Backup vers S3</block>
+  <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">Utilisé pour la résolution DNS par BlueXP</block>
+  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">Sens des données cloud</block>
+  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">Instance Cloud Data Sense</block>
+  <block id="059ace13ef3980df592dafb754ef8883" category="cell">Des solutions clouds adaptées à Cloud Volumes ONTAP</block>
+  <block id="f6ebedc10f620647623a6be7cd7cb8a5" category="summary">Pour créer ou gérer votre environnement de travail Amazon FSX pour ONTAP, vous devez disposer d'une clé d'accès AWS et d'une clé secrète pour un rôle utilisateur IAM avec les autorisations FSX pour ONTAP.</block>
+  <block id="8fad3d94a3385eeb6406613f49896cdd" category="doc">Configurez les autorisations de FSX pour ONTAP</block>
+  <block id="f7690c21dcdeafa719d4764552e4d2d7" category="paragraph">Pour créer ou gérer un environnement de travail Amazon FSX for ONTAP, vous devez ajouter des informations d'identification AWS à BlueXP en fournissant l'ARN d'un rôle IAM qui donne à BlueXP les autorisations nécessaires pour créer un environnement de travail FSX for ONTAP.</block>
+  <block id="d8a56d983b91f097e5ba55dd03a18509" category="section-title">Configurer le rôle IAM</block>
+  <block id="1db8d07619da1f12a7b920676f6769ae" category="paragraph">Configurez un rôle IAM qui permet à BlueXP d'assumer le rôle.</block>
+  <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">Accédez à la console IAM dans le compte cible.</block>
+  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">Sous gestion des accès, cliquez sur *rôles &gt; Créer un rôle* et suivez les étapes pour créer le rôle.</block>
+  <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">Assurez-vous de faire ce qui suit :</block>
+  <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">Sous *Type d'entité approuvée*, sélectionnez *compte AWS*.</block>
+  <block id="c29858d9450fbef0a082acaa54d1bc6d" category="list-text">Sélectionnez *un autre compte AWS* et saisissez l'ID de BlueXP.</block>
+  <block id="edcfddcfff54621c47b01eddd968a5b0" category="list-text">Pour BlueXP SaaS : 952013314444</block>
+  <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">Pour AWS GovCloud (USA) : 033442085313</block>
+  <block id="30c558b7179a7e55ad7f3ae5ca262466" category="list-text">Créez une stratégie qui inclut les autorisations suivantes :</block>
+  <block id="7ac66cbf6468d4b2ac580b0142eb7f7b" category="inline-link-macro">BlueXP stratégies</block>
+  <block id="a4b479a41ed7a914d0dd394ff19733d2" category="paragraph">Afficher la règle de déploiement du connecteur depuis le <block ref="6bc39dc7152091d002dd49afe75c9615" category="inline-link-macro-rx"></block>.</block>
+  <block id="fa9df323148192800073dd2a78c81f73" category="list-text">Copiez le rôle ARN du rôle IAM afin de pouvoir le coller dans BlueXP à l'étape suivante.</block>
+  <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">Le rôle IAM dispose désormais des autorisations requises.</block>
+  <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">Ajoutez les informations d'identification</block>
+  <block id="d5dc64744da4d60a47aa835877d08194" category="paragraph">Une fois que vous avez autorisé le rôle IAM, ajoutez le rôle ARN à BlueXP.</block>
+  <block id="6d9d6baff2479ce7a87bf705f93f1641" category="paragraph">Si vous venez de créer le rôle IAM, l'utilisation peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.</block>
+  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.</block>
+  <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP.</block>
+  <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.</block>
+  <block id="469d6f26b0e14d75fc0c834eeac72311" category="list-text">*Informations d'identification Location* : sélectionnez *Amazon Web Services &gt; BlueXP*.</block>
+  <block id="8cf335d7d3b1dd5cdac30699d20489c0" category="list-text">*Définir les informations d'identification* : fournir l'ARN (Amazon Resource Name) du rôle IAM.</block>
+  <block id="a7cf2ac8ff4dd10d1e304f0abd7fe0bd" category="list-text">Si vous utilisez un compte AWS GovCloud (USA), consultez *j'utilise un compte AWS GovCloud (USA)*.</block>
+  <block id="045e30d9d567e729274d9202eee4ff62" category="inline-image-macro">Capture d'écran de la case à cocher du compte GovCloud (USA).</block>
+  <block id="c03a6ecd27b7a5ea40ee52d99c7a247a" category="paragraph"><block ref="c03a6ecd27b7a5ea40ee52d99c7a247a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a9891de406800116bd9cb8226be9beb9" category="list-text">L'authentification à l'aide d'AWS GovCloud désactive la plateforme SaaS. Il s'agit d'une modification permanente de votre compte et ne peut pas être annulée.</block>
+  <block id="cc993521b8909c4085841bf25067d9c0" category="list-text">*Review* : confirmez les détails des nouvelles informations d'identification et cliquez sur *Add*.</block>
+  <block id="c0abab76d53e87b10c7a7de184fc0f53" category="paragraph">Vous pouvez maintenant utiliser les informations d'identification lors de la création d'un environnement de travail FSX pour ONTAP.</block>
+  <block id="97911b3c54a4e826b34c1f79026316c5" category="inline-link">Identifiants et autorisations AWS</block>
+  <block id="3d3e910b68a6f9dc68d007376e0dae47" category="list-text"><block ref="3d3e910b68a6f9dc68d007376e0dae47" category="inline-link-rx"></block></block>
+  <block id="193ad4e55afb9be5b67589ce2fc9b33d" category="inline-link">Gestion des identifiants AWS pour BlueXP</block>
+  <block id="f9a91bf42987bf0077570f294d5077a4" category="list-text"><block ref="f9a91bf42987bf0077570f294d5077a4" category="inline-link-rx"></block></block>
+  <block id="243263104c829e77835d632f591230d5" category="summary">Avant d'ouvrir un dossier de demande de support auprès du support technique NetApp, vous devez ajouter un compte sur le site de support NetApp à BlueXP, puis vous inscrire pour bénéficier du support.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">S'inscrire pour obtenir de l'aide</block>
+  <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">Avant d'ouvrir un dossier de demande de support auprès du support technique NetApp, vous devez ajouter un compte sur le site du support NetApp (NSS) à BlueXP, puis vous inscrire pour obtenir du support.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Présentation de l'inscription au support</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Il existe deux types d'inscription pour activer les droits d'assistance :</block>
+  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">Enregistrement de votre abonnement au support pour les identifiants de compte BlueXP (votre numéro de série à 20 chiffres 960xxxxxxxxx se trouve sur la page des ressources de support de BlueXP).</block>
+  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">Il sert d'ID d'abonnement unique pour tous les services de BlueXP. Chaque abonnement au support BlueXP au niveau du compte doit être enregistré.</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">Enregistrement des numéros de série Cloud Volumes ONTAP associés à un abonnement sur le marché de votre fournisseur cloud (numéros de série à 20 chiffres 909201xxxxxxxx).</block>
+  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Ces numéros de série sont généralement appelés _PAYGO - numéros de série_ et sont générés par BlueXP au moment du déploiement de Cloud Volumes ONTAP.</block>
+  <block id="9d4125dc88bb9db6eb4be939905761ce" category="paragraph">L'enregistrement des deux types de numéros de série offre des fonctionnalités telles que l'ouverture de tickets de support et la génération automatique de tickets.</block>
+  <block id="98bc603dcb6d5a57d540b13b541fa41a" category="paragraph">La façon dont vous vous inscrivez dépend de votre présence ou de votre présence chez un client ou un partenaire nouveau ou existant.</block>
+  <block id="e5646198d2e01aab2cec9ef946f9c53a" category="list-text">Client ou partenaire existant</block>
+  <block id="76928f97884b4332b83c5be9b99d93d3" category="paragraph">En tant que client ou partenaire NetApp, vous pouvez utiliser votre compte SSO du site de support NetApp pour effectuer les enregistrements suivants. Dans le tableau de bord support, BlueXP fournit une page *NSS Management* où vous pouvez ajouter votre compte NSS. Une fois votre compte NSS ajouté, BlueXP enregistre automatiquement ces numéros de série pour vous.</block>
+  <block id="4e6af37fb81d50483d832d4de6e2b26a" category="inline-xref">Découvrez comment ajouter votre compte NSS</block>
+  <block id="8d80298f51b7ff2da78e26e60195c7a3" category="paragraph"><block ref="cbec7c1a4a2acff5e84457dd449ac01d" category="inline-xref-macro-rx"></block>.</block>
+  <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">Nouveaux partenaires NetApp</block>
+  <block id="679f2cae4657f177cc89458d49c97e5f" category="paragraph">Si vous êtes nouveau chez NetApp, vous devez enregistrer votre numéro de série BlueXP sur le site d'inscription du support NetApp. Une fois que vous avez terminé cette inscription et créé un nouveau compte NSS, vous pouvez utiliser ce compte dans BlueXP pour vous inscrire automatiquement à l'avenir.</block>
+  <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">Découvrez comment vous inscrire auprès de NetApp</block>
+  <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>.</block>
+  <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">Ajouter un compte NSS à BlueXP</block>
+  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">Le tableau de bord du support vous permet d'ajouter et de gérer vos comptes du site de support NetApp pour les utiliser avec Cloud Manager.</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si vous avez un compte au niveau du client, vous pouvez ajouter un ou plusieurs comptes NSS.</block>
+  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">Si vous avez un compte partenaire ou revendeur, vous pouvez ajouter un ou plusieurs comptes NSS, mais ils ne peuvent pas être ajoutés en même temps que les comptes au niveau du client.</block>
+  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Capture d'écran du menu aide où support est la première option répertoriée</block>
+  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Cliquez sur *NSS Management &gt; Ajouter un compte NSS*.</block>
+  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">Lorsque vous y êtes invité, cliquez sur *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
+  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Sur la page de connexion, indiquez l'adresse e-mail et le mot de passe que vous avez enregistrés sur le site de support NetApp pour réaliser le processus d'authentification.</block>
+  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Ces actions permettent à BlueXP d'utiliser votre compte NSS pour des opérations telles que le téléchargement de licences, la vérification de la mise à niveau logicielle et les inscriptions de support futures.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
+  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">Le compte doit être un compte de niveau client (et non un compte invité ou temporaire).</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Une icône de trois points horizontaux</block>
+  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">Une fois la connexion établie, NetApp stockera le nom d'utilisateur NSS. Il s'agit d'un ID généré par le système qui correspond à votre courrier électronique. Sur la page *NSS Management*, vous pouvez afficher votre courriel à partir du <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *mettre à jour les informations d'identification* dans le <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu. Cette option vous invite à vous reconnecter.</block>
+  <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">Inscrivez-vous auprès de NetApp</block>
+  <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">Le fait de vous inscrire au support NetApp dépend de la présence ou non d'un compte sur le site de support NetApp (NSS).</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Client existant avec un compte NSS</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Si vous êtes client NetApp avec un compte NSS, il vous suffit de vous inscrire pour obtenir du support dans BlueXP.</block>
+  <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">Si ce n'est déjà fait, ajoutez votre compte NSS à BlueXP.</block>
+  <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">Sur la page *Ressources*, cliquez sur *s'inscrire au support*.</block>
+  <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">Capture d'écran indiquant le numéro de série d'un compte et l'option Register pour le support</block>
+  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Client existant mais aucun compte NSS</block>
+  <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">Si vous êtes déjà client NetApp avec des licences et des numéros de série existants mais que _no_ NSS, il vous suffit de créer un compte NSS.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">Formulaire d'inscription de l'utilisateur du site de support NetApp</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">Créez un compte sur le site de support NetApp en complétant le<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">Veillez à sélectionner le niveau d'utilisateur approprié, qui est généralement *client/utilisateur final NetApp*.</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">Veillez à copier le numéro de série du compte BlueXP (960xxxx) utilisé ci-dessus pour le champ Numéro de série. Le traitement du compte sera ainsi accéléré.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Découvrez la toute nouvelle gamme NetApp</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si vous êtes nouveau chez NetApp et que vous ne disposez pas d'un compte NSS, effectuez chacune des étapes ci-dessous.</block>
+  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">Recherchez le numéro de série de votre compte Cloud Manager sur la page d'inscription au support.</block>
+  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Site d'inscription au support NetApp</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Accédez à<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> Et sélectionnez *je ne suis pas un client NetApp enregistré*.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Remplissez les champs obligatoires (ceux avec des astérisques rouges).</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">Dans le champ *Product Line*, sélectionnez *Cloud Manager*, puis votre fournisseur de facturation applicable.</block>
+  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">Copiez le numéro de série de votre compte Cloud Manager depuis l'étape 2 ci-dessus, vérifiez la sécurité, puis lisez la Déclaration de confidentialité des données NetApp.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">Un e-mail est immédiatement envoyé à la boîte aux lettres fournie pour finaliser cette transaction sécurisée. Assurez-vous de vérifier vos dossiers de courrier indésirable si l'e-mail de validation n'arrive pas dans quelques minutes.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Confirmez l'action à partir de l'e-mail.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">La confirmation de la soumission de votre demande à NetApp et vous recommande de créer un compte sur le site de support NetApp.</block>
+  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">Veillez à copier le numéro de série du compte Cloud Manager (960xxxx) utilisé ci-dessus pour le numéro de série. Le traitement du compte sera ainsi accéléré.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp devrait vous contacter au cours de ce processus. Il s'agit d'un exercice d'intégration unique pour les nouveaux utilisateurs.</block>
+  <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">Une fois votre compte sur le site de support NetApp, vous pouvez accéder à BlueXP et ajouter ce compte NSS pour les inscriptions futures.</block>
+  <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp prend en charge BlueXP de plusieurs façons. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenez de l'aide</block>
+  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp prend en charge BlueXP et ses services cloud de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
+  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">Auto-assistance</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de connaissances</block>
+  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
+  <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">Recherchez dans la base de connaissances BlueXP des articles utiles pour résoudre les problèmes.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">Rejoignez la communauté BlueXP pour suivre des discussions en cours ou en créer de nouveaux.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentation</block>
+  <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">La documentation BlueXP que vous consultez actuellement.</block>
+  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Courrier électronique :ng-cloudmanager-feedback@netapp.com[E-mail de commentaires]</block>
+  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Nous accordons une grande importance à vos commentaires. Envoyez vos commentaires pour nous aider à améliorer BlueXP.</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="section-title">Support NetApp</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">Découvrez comment vous inscrire à de l'aide</block>
+  <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">Pour utiliser la fonction *Créer un cas*, vous devez d'abord effectuer un enregistrement unique de votre numéro de série d'ID de compte BlueXP (par exemple 960xxxx) avec NetApp. <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>.</block>
+  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">Dans BlueXP, cliquez sur *aide &gt; support*.</block>
+  <block id="f5052c65917d7341726235d4d4941461" category="list-text">Choisissez l'une des options disponibles sous support technique :</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Cliquez sur *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
+  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">Cliquez sur *Créer un dossier* pour ouvrir un dossier auprès des spécialistes du support NetApp :</block>
+  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*Compte sur le site de support NetApp* : sélectionnez le compte NSS applicable associé à la personne qui ouvre le dossier de support. Cette personne sera le contact principal avec NetApp en plus de l'e-mail ci-dessous.</block>
+  <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">Si vous ne voyez pas votre compte NSS, vous pouvez accéder à l'onglet *NSS Management* de la section support de BlueXP pour l'ajouter.</block>
+  <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service* : sélectionnez le service auquel le problème est associé. Par exemple, BlueXP lorsqu'il est spécifique à un problème de support technique avec des flux de travail ou des fonctionnalités au sein du service.</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Environnement de travail* : si applicable au stockage, sélectionnez *Cloud Volumes ONTAP* ou *sur site*, puis l'environnement de travail associé.</block>
+  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">La liste des environnements de travail est comprise dans le cadre du compte, de l'espace de travail et du connecteur BlueXP que vous avez sélectionnés dans la bannière supérieure du service.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*Priorité du cas* : choisissez la priorité du cas, qui peut être faible, Moyen, élevé ou critique.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">Pour en savoir plus sur ces priorités, passez votre souris sur l'icône d'information située à côté du nom du champ.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*Description du problème* : fournir une description détaillée de votre problème, y compris les messages d'erreur ou les étapes de dépannage applicables que vous avez effectués.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*Adresses e-mail supplémentaires*: Entrez des adresses e-mail supplémentaires si vous souhaitez informer quelqu'un d'autre de ce problème.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Capture d'écran du formulaire Créer un dossier qui vous permet de créer un dossier auprès du support NetApp.</block>
+  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Une fenêtre contextuelle contenant votre numéro de dossier de support s'affiche. Un spécialiste du support NetApp va étudier votre dossier et vous recontacterons très rapidement.</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">Pour consulter l'historique de vos dossiers d'assistance, vous pouvez cliquer sur *Paramètres &gt; Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton à l'extrême droite vous permet de développer l'action pour voir les détails.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Il est possible que vous rencontriez le message d'erreur suivant lors de la création d'un dossier :</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">« Vous n'êtes pas autorisé à créer un dossier pour le service sélectionné »</block>
+  <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez consulter votre liste de comptes NSS en haut du formulaire *Créer un dossier* pour trouver la correspondance appropriée, ou vous pouvez demander de l'aide en utilisant l'une des options suivantes :</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Utilisez le chat du produit</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Soumettre un dossier non technique à<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="f72448d4491d54800c0487b0482fd149" category="summary">Une fois l'environnement de travail configuré, vous pouvez créer et gérer Amazon FSX pour les volumes ONTAP, les clones et les snapshots, modifier les règles de hiérarchisation et supprimer FSX pour ONTAP.</block>
+  <block id="0b0c82859f18c5cf1bcb10330fab56bd" category="doc">Créez des volumes pour Amazon FSX pour ONTAP</block>
+  <block id="d950ccfec30779e51b9fd6a8aecbb558" category="paragraph">Une fois votre environnement de travail configuré, vous pouvez créer et monter FSX pour les volumes ONTAP.</block>
+  <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">Créer des volumes</block>
+  <block id="0f845867deaf035383ffc217279b9c7f" category="paragraph">Vous pouvez créer et gérer des volumes NFS, CIFS et iSCSI à partir de votre environnement de travail FSX pour ONTAP dans BlueXP. Les volumes créés à l'aide de l'interface de ligne de commande ONTAP seront également visibles dans votre environnement de travail FSX pour ONTAP.</block>
+  <block id="36ee27bc3fc7c617977b35534609c979" category="paragraph">Éléments requis :</block>
+  <block id="ad7e5366eeeef80a0cca58ed2f228e69" category="inline-link">Connecteur dans AWS</block>
+  <block id="2aeb3bf14f4c88c233b9054f0d5f9f46" category="list-text">Un actif<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>.</block>
+  <block id="5465e73e9a93dbf3732ca4677b294afe" category="inline-link-macro">AWS : conditions préalables à l'utilisation d'une application Microsoft AD gérée automatiquement</block>
+  <block id="9e9d8417e8c186ec6d679c589ea0e388" category="list-text">Si vous souhaitez utiliser SMB, vous devez avoir configuré DNS et Active Directory. Pour plus d'informations sur la configuration réseau DNS et Active Directory, reportez-vous à la section <block ref="d929f7299259db2194621c6c3cd97ea7" category="inline-link-macro-rx"></block>.</block>
+  <block id="5f1502c18596a814041ff3a5f4953b39" category="list-text">Ouvrez l'environnement de travail FSX pour ONTAP.</block>
+  <block id="8bb933964e44d095412ffc5c20dc6cd4" category="list-text">Si aucun connecteur n'est activé, vous serez invité à en ajouter un.</block>
+  <block id="e5269a85a2cb3cf98fc7a82c3a558211" category="inline-image-macro">Capture d'écran de l'invite du connecteur FSX pour ONTAP.</block>
+  <block id="5890e0ca1f9df3cd1ea6270dc6c67d05" category="paragraph"><block ref="5890e0ca1f9df3cd1ea6270dc6c67d05" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="811f08ec14bddf12bb95cd5465790a18" category="list-text">Cliquez sur l'onglet *volumes*</block>
+  <block id="5e65e2e51d0d291499a42f54730e645c" category="list-text">Cliquez sur *Ajouter un volume*.</block>
+  <block id="e76e0d2c6703e75c3666c67d2b185919" category="inline-image-macro">Capture d'écran de l'onglet volume FSX for ONTAP.</block>
+  <block id="638a4176be76c6cf595776403405ef92" category="paragraph"><block ref="638a4176be76c6cf595776403405ef92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77c018c319fffd489ece68e7e9f933e3" category="list-text">*Détails et protection du volume* :</block>
+  <block id="2165a478df3c7cdbb020957742f7a396" category="list-text">Entrez le nom de votre nouveau volume.</block>
+  <block id="8a7a21842c95be5ef7cf8fb45e457fbb" category="list-text">Les champs du SVM (Storage VM) renseigne automatiquement le SVM en fonction du nom de votre environnement de travail.</block>
+  <block id="09d72555d9ef793670cfd52c3b29a5a9" category="list-text">Entrez la taille du volume et sélectionnez une unité (Gio ou Tio). Notez que la taille du volume va augmenter en fonction de l'utilisation.</block>
+  <block id="67cab8c7d29423fd822eaba3b1d1ad3e" category="list-text">Sélectionnez une règle de snapshots. Par défaut, un instantané est créé toutes les heures (en conservant les six dernières copies), tous les jours (en conservant les deux dernières copies) et toutes les semaines (en conservant les deux dernières copies).</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">Cliquez sur *Suivant*.</block>
+  <block id="4b1ceb73f69790897d4632ba712c7659" category="inline-image-macro">Capture d'écran des détails du volume et des champs de protection pour FSX pour la création du volume ONTAP.</block>
+  <block id="5d40ada61a97a98ef6bc45b298d20ee3" category="paragraph"><block ref="5d40ada61a97a98ef6bc45b298d20ee3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0beac119c78b8228ca36d4b93ef1bc7" category="list-text">*Protocole* : sélectionnez un protocole de volume NFS, CIFS ou iSCSI.</block>
+  <block id="547a5c5cf72eabae707b477139de2cdd" category="list-text">Pour NFS :</block>
+  <block id="2f13041935e5c3174ee293d608dc78fb" category="list-text">Sélectionnez une stratégie de contrôle d'accès.</block>
+  <block id="b07a5c1cd32beac9e88c78df72edc8ec" category="list-text">Sélectionnez les versions NFS.</block>
+  <block id="fc103acdd0c976c704dfea17981b4304" category="list-text">Sélectionnez une stratégie d'exportation personnalisée. Cliquez sur l'icône d'information pour obtenir des critères de valeur valides.</block>
+  <block id="f2ee46b3a1c0e7f976a1164a6ca75f9e" category="inline-image-macro">Copie d'écran de la configuration NFS FSX pour la création de volume ONTAP.</block>
+  <block id="7eeb0d62ee9d4c7e8cd6d54885fbb0fe" category="paragraph"><block ref="7eeb0d62ee9d4c7e8cd6d54885fbb0fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83b83892341426df7b542344aa75ca76" category="list-text">Pour CIFS :</block>
+  <block id="2ab8185476c6aa2340579384597cb230" category="list-text">Entrez un nom de partage.</block>
+  <block id="e5de5245ec2c46e9d548be02749c8dc0" category="list-text">Entrez des utilisateurs ou des groupes séparés par un point-virgule.</block>
+  <block id="4b84f0c5fc5c7b04da02e0f060ce5ce5" category="list-text">Sélectionnez le niveau d'autorisation du volume.</block>
+  <block id="46e8ceffdf7a4b1aacfa09a39d99e67c" category="paragraph"><block ref="46e8ceffdf7a4b1aacfa09a39d99e67c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e933d10896e213582c2864ce4ca0f276" category="admonition">S'il s'agit du premier volume CIFS pour cet environnement de travail, vous serez invité à configurer la connectivité CIFS à l'aide d'une configuration _Active Directory_ ou _Workgroup_.</block>
+  <block id="6f9872e6257b850cf12c8d7cb5b9f8b8" category="list-text">Si vous sélectionnez une configuration Active Directory, vous devez fournir les informations de configuration suivantes.</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">Champ</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="9d35762d6cb446294ba4226fba0d1eb5" category="cell">Adresse IP principale DNS</block>
+  <block id="123a30d033bf12586c81d5b70356c536" category="cell">Les adresses IP des serveurs DNS qui fournissent la résolution de nom pour le serveur CIFS. Le serveur DNS répertorié doit contenir les enregistrements SRV (Service Location Records) nécessaires pour localiser les serveurs LDAP Active Directory et les contrôleurs de domaine du domaine auquel le serveur CIFS rejoint.</block>
+  <block id="b4a5aaff47ac1aad0a039f0089aac0c6" category="cell">Domaine Active Directory à rejoindre</block>
+  <block id="bdb1f2fed183dbc7963363bc018c71e6" category="cell">Le FQDN du domaine Active Directory (AD) que vous souhaitez que le serveur CIFS rejoint.</block>
+  <block id="a3bbc956ff81e28dd77efaaf4d1c5b30" category="cell">Informations d'identification autorisées à rejoindre le domaine</block>
+  <block id="03fa572f48ef7f33b022f609e0553e85" category="cell">Nom et mot de passe d'un compte Windows disposant de privilèges suffisants pour ajouter des ordinateurs à l'unité d'organisation spécifiée dans le domaine AD.</block>
+  <block id="2f9a775f92eab720a2ab46b9fa0d4e8b" category="cell">Nom NetBIOS du serveur CIFS</block>
+  <block id="df93949590558759d0b0f449537966d0" category="cell">Nom de serveur CIFS unique dans le domaine AD.</block>
+  <block id="ff309cf3107765153856990e03224d8c" category="cell">Unité organisationnelle</block>
+  <block id="03cb85499f4837ea1e2f43864e39d856" category="cell">Unité organisationnelle du domaine AD à associer au serveur CIFS. La valeur par défaut est CN=Computers.</block>
+  <block id="c11b541f2dc51346609bbd4f84450b6b" category="cell">Domaine DNS</block>
+  <block id="314c2b52f53238e133233b60949a6d36" category="cell">Le domaine DNS pour la machine virtuelle de stockage (SVM). Dans la plupart des cas, le domaine est identique au domaine AD.</block>
+  <block id="225f0204cd2ca87530c681aeae9b7f3e" category="cell">Serveur NTP</block>
+  <block id="6f28647aed612b810bbd7e815e8adbef" category="inline-link">Documents d'automatisation BlueXP</block>
+  <block id="40093c43e131165eb7dd2a980ff78509" category="cell">Sélectionnez *Activer la configuration du serveur NTP* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la<block ref="cf06621be2a2bfce0ef0595deee16955" category="inline-link-rx"></block> pour plus d'informations.</block>
+  <block id="c806fc6088504aece33ec1078f7edf13" category="list-text">Si vous sélectionnez une configuration de groupe de travail, entrez le nom du serveur et du groupe de travail pour un groupe de travail configuré pour CIFS.</block>
+  <block id="7a641f2010297c1d06c28aad18308a5b" category="list-text">Pour iSCSI : vous pouvez connecter votre LUN à l'aide d'un groupe initiateur existant ou en créer une nouvelle. Pour mapper un groupe initiateur existant, sélectionnez votre système d'exploitation et un ou plusieurs groupes initiateurs.</block>
+  <block id="7d7217d548e427bd0d76f5081e4b4cb5" category="paragraph">Pour créer un nouveau groupe initiateur :</block>
+  <block id="6ae6d068572461cadd78494cd3954770" category="list-text">Sélectionnez **Créer nouveau**.</block>
+  <block id="6439f651e3ce60a787666dc41a8ca17f" category="list-text">Sélectionnez votre système d'exploitation.</block>
+  <block id="16125dd1e69c3f67387e091dfbdb0104" category="inline-link-macro">Connectez un hôte à une LUN</block>
+  <block id="4829537a55a4319514ecedacd16c615c" category="list-text">Cliquez pour ajouter un ou plusieurs noms iSCSI qualifiés (IQN) de l'hôte. Vous pouvez sélectionner des IQN existants ou ajouter de nouveaux IQN. Pour plus de détails sur la recherche de l'IQN pour un volume, reportez-vous à la section <block ref="ea6aa66bd7959c06552c511c78fe80e4" category="inline-link-macro-rx"></block>.</block>
+  <block id="ecfc70ae41156684ed148266abaf3a62" category="list-text">Entrez un **Nom du groupe initiateur**.</block>
+  <block id="ccb9a070caab16c4e464e89fd6afe362" category="inline-image-macro">Capture d'écran de la configuration iSCSI FSX pour la création d'un volume ONTAP.</block>
+  <block id="f157bba0d98c84b6de3aaefa71426f09" category="paragraph"><block ref="f157bba0d98c84b6de3aaefa71426f09" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="77329b4991542c66635b8dd3f7a6f518" category="list-text">*Profil d'utilisation et hiérarchisation*:</block>
+  <block id="0458d209a53113bf4e745280c9316fc5" category="list-text">Par défaut, *efficacité du stockage* est désactivée. Vous pouvez modifier ce paramètre afin d'activer la déduplication et la compression.</block>
+  <block id="ecc7b94568d033b8afa5f95b89b20136" category="list-text">Par défaut, *Tiering Policy* est défini sur *snapshot Only*. Vous pouvez sélectionner une autre règle de hiérarchisation en fonction de vos besoins.</block>
+  <block id="7721c2bc1a46653d2fe31df04b1f1d7b" category="inline-image-macro">Capture d'écran de la configuration du profil d'utilisation et du Tiering pour FSX pour la création de volume ONTAP.</block>
+  <block id="d92dc17a178426d4916acd66998be69b" category="paragraph"><block ref="d92dc17a178426d4916acd66998be69b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f3a303dc17c6a2c91073ff0eb515587f" category="list-text">*Review* : passez en revue votre configuration de volume. Cliquez sur *Précédent* pour modifier les paramètres ou sur *Ajouter* pour créer le volume.</block>
+  <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">Le nouveau volume est ajouté à l'environnement de travail.</block>
+  <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">Montez les volumes</block>
+  <block id="cabcbbac4437e0dbf2eec9f1d07d973b" category="paragraph">Accédez aux instructions de montage depuis BlueXP pour monter le volume sur un hôte.</block>
+  <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">Ouvrir l'environnement de travail.</block>
+  <block id="87ab0ddecc6298e066c5bf52a6e57341" category="list-text">Sélectionnez l'onglet *Volume* et *gérer le volume* pour ouvrir le menu *actions Volume*.</block>
+  <block id="1cffe537ba60b23c60608f4b7ec02e43" category="inline-image-macro">Capture d'écran indiquant comment ouvrir le menu actions du volume.</block>
+  <block id="b43e642ae439f1f795292eb5df5f84d3" category="paragraph"><block ref="b43e642ae439f1f795292eb5df5f84d3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78c27b88e2a8142906bb69594e5b22a6" category="list-text">Sélectionnez *Mount command* et suivez les instructions pour monter le volume.</block>
+  <block id="35f5a704747f7e6644a0bbedc33a0c2e" category="paragraph">Votre volume est maintenant monté sur l'hôte.</block>
+  <block id="0aab21b00fa6135e62b29e7f8bb6778e" category="summary">BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l'environnement de travail.</block>
+  <block id="faac9e60f93091e9068b8f347b36ec75" category="doc">Gérer un environnement de travail Amazon FSX pour ONTAP</block>
+  <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">Modification de la capacité de débit</block>
+  <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">Vous pouvez modifier la capacité de débit à tout moment après la création de l'environnement de travail FSX pour ONTAP.</block>
+  <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">Vous avez besoin d'un actif<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>.</block>
+  <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">Dans l'onglet *Présentation*, sélectionnez *fonctionnalités*.</block>
+  <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">Illustration de l'icône d'édition du crayon.</block>
+  <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">Sélectionnez l'icône crayon (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Pour ouvrir la page d'édition *capacité de débit*.</block>
+  <block id="87b240f45f566a73d19136ab81e90ad1" category="inline-image-macro">Capture d'écran de l'emplacement du menu de modification de la capacité de débit.</block>
+  <block id="e09dc417c2d896d165ca331477153842" category="paragraph"><block ref="e09dc417c2d896d165ca331477153842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="230f70d1e5d26fbe6e5ad10f5308cabe" category="list-text">Sélectionnez une nouvelle capacité de débit dans la liste déroulante et sélectionnez *mettre à jour*. Cette modification peut prendre jusqu'à 25 minutes pour effet et n'interrompt pas l'accès aux données.</block>
+  <block id="a0ebe9e341b2c5054b22afc7d98d1401" category="section-title">Modifiez la capacité de stockage et les IOPS</block>
+  <block id="f3c93b45ca50102a9f0b7eae1e06d071" category="paragraph">Vous pouvez modifier la capacité de stockage et les IOPS à tout moment après la création de l'environnement de travail FSX pour ONTAP.</block>
+  <block id="048b8d92cffbe45e8afec553ae5bdab0" category="list-text">Sélectionnez l'icône crayon (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Pour ouvrir la page de modification *capacité de stockage et IOPS*.</block>
+  <block id="d6684930c2875391fe70b5eb14401bbb" category="inline-image-macro">Capture d'écran de l'emplacement du menu modification de la capacité de stockage et IOPS.</block>
+  <block id="687579d242782f9a851dc5bb5ba9abc9" category="paragraph"><block ref="687579d242782f9a851dc5bb5ba9abc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dfb628b495d5e0828edcde206a117a0d" category="list-text">Vous pouvez modifier la capacité de stockage et les IOPS toutes les six heures. Si vous tentez d'apporter des modifications plus fréquemment, une erreur s'affiche.</block>
+  <block id="e67f7cfa37e5dcd4f3836e76f5301a68" category="inline-image-macro">Capture d'écran de la page pour modifier la capacité de stockage et les valeurs d'IOPS.</block>
+  <block id="f5aa006a4894acbba121bdb32f513ead" category="paragraph"><block ref="f5aa006a4894acbba121bdb32f513ead" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c17ed8503d69fa2ad1c61b6c92a2255" category="list-text">Le taux d'utilisation maximal recommandé est de 80 % pour le maintien des performances du Tiering des données et la possibilité d'ajouter de la capacité pour des données supplémentaires.</block>
+  <block id="e8036e0ac9189e05af8ebeb943ee3fd3" category="list-text">La sélection de *Automatic* IOPS conserve un ratio de trois IOPS SSD provisionnées par Gio de stockage primaire jusqu'à 80,000. Vous ne pouvez pas provisionner manuellement une valeur d'IOPS supérieure ou égale à 80,000.</block>
+  <block id="d179171b709f127d6b88e332ad5ac396" category="list-text">Cochez la case pour confirmer que l'évolution de la capacité de stockage affecte le coût du service FSX pour ONTAP et que d'autres modifications ne peuvent pas être effectuées pendant six heures.</block>
+  <block id="1f25673463b8f906d801bd291ad45315" category="list-text">Sélectionnez *mettre à jour* pour confirmer vos modifications.</block>
+  <block id="b3fee7abcfd59e1f7a4b591d94eea26b" category="section-title">Supprimez FSX pour ONTAP de l'espace de travail</block>
+  <block id="78b85142b4840670f82bc1e876164d5a" category="paragraph">Vous pouvez supprimer FSX pour ONTAP de BlueXP sans supprimer votre compte ou volumes FSX pour ONTAP. Vous pouvez à tout moment ajouter l'environnement de travail FSX pour ONTAP à BlueXP.</block>
+  <block id="9ddaae0edb615f2995d27bd6e00976ce" category="list-text">Ouvrir l'environnement de travail. Si vous n'avez pas de connecteur dans AWS, l'écran d'invite s'affiche. Vous pouvez ignorer cette procédure et procéder à la suppression de l'environnement de travail.</block>
+  <block id="4fe33f0977f17b0718840c634bb48345" category="list-text">Dans le coin supérieur droit de la page, sélectionnez le menu actions et sélectionnez *Supprimer de l'espace de travail*.</block>
+  <block id="2bded8459b9098e5f464123fa54a7a84" category="inline-image-macro">Capture d'écran de l'option de suppression pour FSX pour ONTAP à partir de l'interface BlueXP.</block>
+  <block id="00e44395dfa88719cfdde0d3aafb0b4c" category="paragraph"><block ref="00e44395dfa88719cfdde0d3aafb0b4c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39c686ea51a2e3f3412988ea98942824" category="list-text">Sélectionnez *Supprimer* pour supprimer FSX pour ONTAP de BlueXP.</block>
+  <block id="2167c28c0f5b01d9e01bb4084f44d791" category="section-title">Supprimez l'environnement de travail FSX pour ONTAP</block>
+  <block id="6835d2c119b318a48de9e93b2e641517" category="paragraph">Vous pouvez supprimer FSX pour ONTAP de BlueXP.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">Avant de commencer</block>
+  <block id="b917a1d8451423450873eef39565dca3" category="inline-link-macro">supprimez tous les volumes</block>
+  <block id="7b41e03b81e97660913781a8239006df" category="list-text">Vous devez <block ref="54cc4f96ff154d8637a706e7f5511434" category="inline-link-macro-rx"></block> associé au système de fichiers.</block>
+  <block id="88b66180df4e558c94db0e4418e28d50" category="admonition">Vous aurez besoin d'un connecteur actif dans AWS pour supprimer ou supprimer des volumes.</block>
+  <block id="ef91377d933625cd5679a41980e84a7d" category="list-text">Vous ne pouvez pas supprimer un environnement de travail contenant des volumes ayant échoué. Les volumes défaillants doivent être supprimés via la console de gestion AWS ou l'interface de ligne de commande avant de supprimer FSX pour le système de fichiers ONTAP.</block>
+  <block id="264e33787c94efb543f65228a9b52512" category="admonition">Cette action supprimera toutes les ressources associées à l'environnement de travail. Cette action ne peut pas être annulée.</block>
+  <block id="759e9950bbe6d95f5d993751a21090d8" category="list-text">Ouvrir l'environnement de travail. Si vous n'avez pas de connecteur dans AWS, l'écran d'invite s'affiche. Vous pouvez ignorer cette procédure et supprimer l'environnement de travail.</block>
+  <block id="3767b7b1dbf8b0f59d82eb46c294df83" category="list-text">Dans le coin supérieur droit de la page, sélectionnez le menu actions et sélectionnez *Supprimer*.</block>
+  <block id="84aebfd9255ade9edf5ed1e04d2d7983" category="inline-image-macro">Capture d'écran de l'option de suppression pour FSX pour ONTAP à partir de l'interface BlueXP.</block>
+  <block id="fa1673decfda6b90d421cf8b1ec087b0" category="paragraph"><block ref="fa1673decfda6b90d421cf8b1ec087b0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e19eec57ec1908f25e4a753fbf9d1bf5" category="list-text">Entrez le nom de l'environnement de travail et sélectionnez *Supprimer*.</block>
+  <block id="b1c694fb2ebede3c4d4ab22be547bed9" category="summary">BlueXP vous permet de créer ou de découvrir un FSX pour les environnements de travail ONTAP afin d'ajouter et de gérer des volumes et des services de données supplémentaires.</block>
+  <block id="56741382a48f0ad5efb57a6532876317" category="doc">Créez ou découvrez un environnement de travail Amazon FSX pour ONTAP</block>
+  <block id="adb79c4b4ae467a33d5b66931e4b3a81" category="paragraph">BlueXP vous permet de créer ou de découvrir un environnement de travail FSX pour ONTAP afin d'ajouter et de gérer des volumes et des services de données supplémentaires.</block>
+  <block id="64c9a9d3cd7c3ca76cf19b78a96c9b79" category="section-title">Créez un environnement de travail Amazon FSX pour ONTAP</block>
+  <block id="a32ac0ad801a437e03bc65b1bb97d7bd" category="inline-link-macro">Découvrez-le à l'aide de BlueXP</block>
+  <block id="3e9f0002f52ffb27118b0d0540159148" category="paragraph">La première étape consiste à créer un environnement de travail FSX pour ONTAP. Si vous avez déjà créé un système de fichiers FSX pour ONTAP dans la console de gestion AWS, vous pouvez <block ref="f0e62c6abb102491f5e44c803b014bee" category="inline-link-macro-rx"></block>.</block>
+  <block id="7a1088b800573a1bba3b00786182133b" category="paragraph">Avant de créer votre environnement de travail FSX pour ONTAP dans BlueXP, vous aurez besoin des éléments suivants :</block>
+  <block id="74e0ba9ea27cef4d0c11560e135b281e" category="inline-link-macro">Ajout d'identifiants AWS à BlueXP</block>
+  <block id="02e21891e6a4d87f518207b9609ebed1" category="list-text">L'ARN d'un rôle IAM qui donne à BlueXP les autorisations nécessaires pour créer un environnement de travail FSX pour ONTAP. Voir <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
+  <block id="122aefb3c8684a0e38fb50d87247ad18" category="list-text">La région et les informations VPN pour lesquelles vous allez créer l'instance FSX pour ONTAP.</block>
+  <block id="6b13ffee707f25ae8bcd9dc0e4d7b4d6" category="list-text">Dans BlueXP, ajoutez un nouvel environnement de travail, sélectionnez l'emplacement *Amazon Web Services*, puis cliquez sur *Suivant*.</block>
+  <block id="b270ee1d45588367ac774fa0f727fc7b" category="list-text">Sélectionnez *Amazon FSX pour ONTAP* et cliquez sur *Suivant*.</block>
+  <block id="f8b92939989132d828cfc3eea521a293" category="inline-image-macro">Capture d'écran de l'ajout d'un environnement de travail pour Amazon FSX pour ONTAP</block>
+  <block id="61a727936c57251e32cb54d629e03313" category="paragraph"><block ref="61a727936c57251e32cb54d629e03313" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="07c0b2e93427e88c842be765301e4e63" category="list-text">Authentifier FSX pour ONTAP dans BlueXP.</block>
+  <block id="ecda29eb0e0827e3bc560f177dcde537" category="list-text">Si un rôle IAM existe dans votre compte avec les autorisations AWS correctes pour FSX pour ONTAP, sélectionnez-le dans la liste déroulante.</block>
+  <block id="bc7877d082a71bb780b2cfe54a2f56db" category="inline-image-macro">Capture d'écran affichant la liste déroulante pour les rôles AWS</block>
+  <block id="88c29361a495a558e8e94ba0f1787827" category="paragraph"><block ref="88c29361a495a558e8e94ba0f1787827" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7a36240333d2de8502faca756504977" category="list-text">Si votre compte ne contient pas de rôle IAM, cliquez sur *page d'informations d'identification* et suivez les étapes de l'assistant pour ajouter un ARN pour un rôle IAM AWS avec les informations d'identification FSX pour ONTAP. Voir <block ref="1bf7f389ad2ba65976eab24c818e174c" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
+  <block id="49727167f9c15ab5bfa0422395e72a31" category="inline-image-macro">Capture d'écran des étapes permettant d'ajouter l'ARN pour un rôle IAM AWS avec l'autorisation FSX pour ONTAP.</block>
+  <block id="32e8c427ff9ed76c4f8f6c5425c12c82" category="paragraph"><block ref="32e8c427ff9ed76c4f8f6c5425c12c82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d2a9afadbb6d43ee9c21ef6dc9d315f" category="list-text">Fournissez des informations sur votre instance FSX pour ONTAP :</block>
+  <block id="620a619e5abf90904f8bd9148673563f" category="list-text">Saisissez le nom de l'environnement de travail que vous souhaitez utiliser.</block>
+  <block id="d99cba7d7f71be21b06a8ed7b3cead82" category="list-text">Vous pouvez également créer des balises en cliquant sur le signe plus et en saisissant un nom et une valeur de balise.</block>
+  <block id="be5962a1bf7a843353b57734848a4297" category="list-text">Entrez et confirmez le mot de passe du cluster ONTAP que vous souhaitez utiliser.</block>
+  <block id="5e3355d70ab52073cbbd53548a916969" category="list-text">Sélectionner l'option pour utiliser le même mot de passe pour l'utilisateur de votre SVM ou définir un autre mot de passe.</block>
+  <block id="d0b2e405325c02e50ba6ff1e7a0bfdeb" category="inline-image-macro">Capture d'écran permettant d'ajouter des informations d'identification pour FSX pour ONTAP</block>
+  <block id="0c59eb935a218de10968d2478d3839c5" category="paragraph"><block ref="0c59eb935a218de10968d2478d3839c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="282e8cadc54623677e7bc13447fcac29" category="list-text">Fournir les informations relatives à la région et au VPC :</block>
+  <block id="f84135b2c550b8d738093a4346ac024d" category="list-text">Sélectionnez un modèle de déploiement HA *Single Availability zone* ou *multiple Availability zones*.</block>
+  <block id="2be7f08200a1fe8660c0e3b215446b33" category="inline-image-macro">Capture d'écran des boutons radio de sélection pour les modèles de déploiement à zone de disponibilité unique ou multiple.</block>
+  <block id="501a818c591eeaa056b0d623f83dba40" category="paragraph"><block ref="501a818c591eeaa056b0d623f83dba40" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="604034876d198af3f8d6cece2f09d984" category="list-text">Sélectionnez une région et VPC.</block>
+  <block id="d7387928ac1cfa971f35a613cd81907c" category="paragraph">Pour plusieurs zones de disponibilité, sélectionnez des sous-réseaux dans au moins deux zones de disponibilité de sorte que chaque nœud se trouve dans une zone de disponibilité dédiée.</block>
+  <block id="02b7327efc840726659c50bf482440ba" category="inline-image-macro">Capture d'écran indiquant l'ajout de la région et du VPC pour FSX pour ONTAP</block>
+  <block id="e856b8b85c22d45ac9df09b76538baf0" category="paragraph"><block ref="e856b8b85c22d45ac9df09b76538baf0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d234e32cc579256f2dc2b1c0f46bf8ed" category="inline-link-macro">Groupes de sécurité AWS</block>
+  <block id="c0a56d37b9a744bb980fb63714ff853a" category="inline-link-macro">Interface réseau élastique AWS (ENI)</block>
+  <block id="70f807aec183b4123fd9e27691b549ae" category="list-text">Acceptez le groupe de sécurité par défaut ou sélectionnez-en un autre. <block ref="35ef09e7b222c17f67a4a66af73d7196" category="inline-link-macro-rx"></block> contrôlez le trafic entrant et sortant. Ceux-ci sont configurés par votre administrateur AWS et associés à votre <block ref="122c50f10f9ced3dc765944ec92b3531" category="inline-link-macro-rx"></block>.</block>
+  <block id="8acea1c4fcca87631ca127e2bc757f13" category="inline-link">Passerelle AWS Transit</block>
+  <block id="98cd8d548fd2fa5186e8dc1c1123f9f6" category="list-text">Laissez _CIDR Range_ vide et cliquez sur *Next* pour définir automatiquement une plage disponible. Vous pouvez également utiliser<block ref="ca64804883d6ae6ee4c5f1f5610fe766" category="inline-link-rx"></block> pour configurer manuellement une plage.</block>
+  <block id="7cc0a94cd1ccce02b23807753272d589" category="paragraph"><block ref="7cc0a94cd1ccce02b23807753272d589" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="274f0b3b024e5cbf45b403266b2d8e00" category="list-text">Sélectionnez des tables de routage qui incluent des routes vers les adresses IP flottantes. Si vous ne disposez que d'une seule table de routage pour les sous-réseaux de votre VPC (la table de routage principale), BlueXP ajoute automatiquement les adresses IP flottantes à cette table de routage. Cliquez sur *Suivant* pour continuer.</block>
+  <block id="efae399de597884ba9e25be68c488178" category="inline-image-macro">Capture d'écran de sélection d'une table de routage pour FSX pour ONTAP</block>
+  <block id="9e3037d0c83106b66f9113f03ee4fb10" category="paragraph"><block ref="9e3037d0c83106b66f9113f03ee4fb10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link">Configuration du système AWS KMS</block>
+  <block id="ba7f6c9c6d14f28bb8898cb79c05a77b" category="list-text">Acceptez la clé principale AWS par défaut ou cliquez sur *changer la clé* pour sélectionner une autre clé maître client AWS (CMK). Pour plus d'informations sur CMK, reportez-vous à la section<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>. Cliquez sur *Suivant* pour continuer.</block>
+  <block id="5f7b5a6773d6263d66627f6153905a67" category="inline-image-macro">Capture d'écran indiquant la définition de la clé principale par défaut pour FSX pour ONTAP</block>
+  <block id="18ee551ad9864bd46a8f5c35b900c641" category="paragraph"><block ref="18ee551ad9864bd46a8f5c35b900c641" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8c4dc6a5ccac057271e4a3a6b3213037" category="list-text">Configurer votre stockage :</block>
+  <block id="d33ef5be6071ae5e3d7d930d8977e41a" category="list-text">Sélectionnez le débit, la capacité et l'unité. Vous pouvez modifier à tout moment la valeur du débit et de la capacité de stockage.</block>
+  <block id="c43f98768b6bade26ae94ab84f81134f" category="list-text">Vous pouvez éventuellement spécifier une valeur d'IOPS. Si vous n'indiquez pas de valeur IOPS, BlueXP définit une valeur par défaut sur la base de 3 IOPS par Gio de la capacité totale saisie. Par exemple, si vous entrez 2000 Gio pour la capacité totale et aucune valeur pour les IOPS, la valeur effective d'IOPS est définie sur 6000. Vous pouvez modifier la valeur des IOPS à tout moment.</block>
+  <block id="72c6f5d2cfeaf6fab82a1ddb12885786" category="inline-image-macro">Copie d'écran du message d'erreur si une valeur d'IOPS incorrecte est définie.</block>
+  <block id="6885d04a0fda617d746b2123b3620e51" category="admonition">Si vous spécifiez une valeur d'IOPS qui ne satisfait pas aux exigences minimales, vous recevrez une erreur lors de l'ajout de l'environnement de travail.<block ref="302f4fa129241cdd96ffd6dc709561e6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8088a4fa7d414a887d0eb3f19623bc06" category="inline-image-macro">Capture d'écran indiquant la définition de la configuration de stockage pour FSX pour ONTAP</block>
+  <block id="43135e6fbb293afbc21ffcb9200cd5ea" category="list-text">Cliquez sur *Suivant*.<block ref="acedc649b329bc2fa4856a424e9ac8f3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c9a1d71e742483b14e29f7c2e43e1c64" category="list-text">Passez en revue votre configuration :</block>
+  <block id="0308fb9d7cca24bdc3f9928245f79119" category="list-text">Cliquez sur les onglets pour vérifier les propriétés de ONTAP, les propriétés du fournisseur et la configuration réseau.</block>
+  <block id="fded4515ce29ea3fdc954faa2784fe7f" category="list-text">Cliquez sur *Précédent* pour modifier les paramètres.</block>
+  <block id="b5bd94a09b2ad1fd2dba6c4a902a9fd3" category="list-text">Cliquez sur *Ajouter* pour accepter les paramètres et créer votre environnement de travail.</block>
+  <block id="ef80142d18e6c5a6d15e4724ab6810b8" category="inline-image-macro">Capture d'écran permettant de vérifier les paramètres de FSX pour ONTAP</block>
+  <block id="e8b9477d45071756ecb4a2cc5082344a" category="paragraph"><block ref="e8b9477d45071756ecb4a2cc5082344a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="69a6a9ad9378e16228ecd670e9d167c8" category="paragraph">BlueXP affiche votre configuration FSX pour ONTAP sur la page Canvas.</block>
+  <block id="45d8e5da7753a5571797f6a81a9c4e3c" category="inline-image-macro">Capture d'écran d'Amazon FSX pour ONTAP sur la page des environnements de travail.</block>
+  <block id="26682ff9a292960b61e97b937520b135" category="paragraph"><block ref="26682ff9a292960b61e97b937520b135" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e35167248d4118a73a969017acba1d8" category="paragraph">Vous pouvez désormais ajouter des volumes à votre environnement de travail FSX pour ONTAP à l'aide de BlueXP.</block>
+  <block id="e69624fa729e14e6bbcae0cf7889e100" category="section-title">Découvrir un système de fichiers FSX existant pour ONTAP</block>
+  <block id="a856a2e7ff7a861c3124938689a66a62" category="paragraph">Si vous avez créé un système de fichiers FSX pour ONTAP à l'aide de la console de gestion AWS ou si vous souhaitez restaurer un environnement de travail que vous avez précédemment supprimé, vous pouvez le découvrir à l'aide de **Mes opportunités** ou manuellement.</block>
+  <block id="1b52b643a7dc88400af8fd712fed3d12" category="section-title">Découvrir à l'aide de Mes opportunités</block>
+  <block id="decbe5e805a0a9516184b64d9bad01c3" category="paragraph">Si vous avez fourni vos informations d'identification AWS à BlueXP, *Mes opportunités* peut automatiquement détecter et suggérer FSX pour les systèmes de fichiers ONTAP à ajouter et à gérer à l'aide de BlueXP. Vous pouvez également vérifier les services de données disponibles.</block>
+  <block id="b74bb93cbb66b60fd6c91eba3c535cb2" category="list-text">Dans BlueXP, cliquez sur l'onglet *Mes opportunités*.</block>
+  <block id="e9ba45e021b291739ba996c9cde18a78" category="list-text">Le nombre de FSX découverts pour les systèmes de fichiers ONTAP s'affiche. Cliquez sur *découvrir*.</block>
+  <block id="7208d8184b0d0e6e3c7bcf475c8f9bd2" category="inline-image-macro">Capture d'écran de la page Mes opportunités pour FSX pour ONTAP.</block>
+  <block id="9e4da126e3095f89c00bb676d98195d8" category="paragraph"><block ref="9e4da126e3095f89c00bb676d98195d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b4a4c841d4545b117e4104be254a0e8" category="list-text">Sélectionnez un ou plusieurs systèmes de fichiers et cliquez sur *Discover* pour les ajouter à la toile.</block>
+  <block id="0187b41b8a735f30cc0556afd7387b9d" category="list-text">Si vous sélectionnez un cluster sans nom, vous recevez une invite pour entrer un nom pour le cluster.</block>
+  <block id="547dba06b4fcfe3fa41996e831e9fb1c" category="list-text">Si vous sélectionnez un cluster qui ne dispose pas des informations d'identification requises pour permettre à BlueXP de gérer le système de fichiers FSX pour ONTAP, vous recevez une invite pour sélectionner les informations d'identification avec les autorisations requises.</block>
+  <block id="1d064916590560310250a3e94aec4539" category="section-title">Découverte manuelle</block>
+  <block id="494021d1d3a9a769ede7819e9cf10cf6" category="paragraph">Vous pouvez découvrir manuellement un système de fichiers FSX pour ONTAP que vous avez ajouté à l'aide de la console de gestion AWS ou que vous avez précédemment supprimé de BlueXP.</block>
+  <block id="c13815d75af2d8f4f6b97743a5731dae" category="list-text">Dans BlueXP, cliquez sur *Ajouter un environnement de travail*, sélectionnez *Amazon Web Services*.</block>
+  <block id="6800849898be1086bb69e4658dd59629" category="list-text">Sélectionnez *Amazon FSX pour ONTAP* et cliquez *cliquez ici*.</block>
+  <block id="e574e1da19f282b48ebb67c362fbc5cc" category="inline-image-macro">Copie d'écran de la découverte d'un environnement de travail pour Amazon FSX pour ONTAP</block>
+  <block id="72e0dd6fd0d4009c79805d8504e7e490" category="paragraph"><block ref="72e0dd6fd0d4009c79805d8504e7e490" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="92362ba030c73cd6e20f4b4da71b26c3" category="list-text">Sélectionnez des informations d'identification existantes ou créez de nouvelles informations d'identification. Cliquez sur *Suivant*.</block>
+  <block id="4dc9c1030aab459d22cbeca85a77bd17" category="list-text">Sélectionnez la région AWS et l'environnement de travail que vous souhaitez ajouter.</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Cliquez sur *Ajouter*.</block>
+  <block id="02ebf3de367dc7096d28e785a65d8c78" category="paragraph">BlueXP affiche le système de fichiers FSX détecté pour ONTAP.</block>
+  <block id="4d40b97424368fd2dcfa3beb51eac192" category="inline-image-macro">Capture d'écran indiquant la région AWS et l'environnement de travail</block>
+  <block id="daf8847714f7e326bcf10553bdbffa28" category="paragraph"><block ref="daf8847714f7e326bcf10553bdbffa28" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e853a8ef076b82d13f35807a2dfe93b" category="summary">Vous pouvez gérer des volumes, des clones et des snapshots, et modifier des règles de hiérarchisation pour FSX pour ONTAP à l'aide de BlueXP.</block>
+  <block id="7e8d943ffd901385b9eef24cb61b44b9" category="doc">Gestion des volumes pour Amazon FSX pour ONTAP</block>
+  <block id="669f767086bf3b89606658facb29605a" category="paragraph">Vous pouvez afficher et gérer des volumes, des clones et des snapshots, et modifier des règles de hiérarchisation pour FSX pour ONTAP à l'aide de BlueXP.</block>
+  <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">Afficher les détails du volume</block>
+  <block id="217a2eee444fb09dda70bb076071f17e" category="paragraph">Une fois le volume créé, vous pouvez afficher les détails de la configuration.</block>
+  <block id="45dddf924938e17bccdd6a467352bfa0" category="admonition">Vous pouvez passer le curseur de la souris sur le nom du volume pour afficher le type de volume.</block>
+  <block id="a99a1e91f5b89a3a1bb26badc77c44b1" category="list-text">Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de volume*.</block>
+  <block id="bc113f9071c312c1d14ec49df82aa928" category="list-text">Sélectionnez *Afficher les détails du volume*.</block>
+  <block id="b29f6e00261f220f9ca9601a3dbc09df" category="section-title">Modifier les volumes</block>
+  <block id="b609b522164fd601ccb14538b7074e4e" category="paragraph">Une fois que vous avez créé un volume, vous pouvez le modifier à tout moment.</block>
+  <block id="a324b09bde8b0186d3f43692b7556fd9" category="list-text">Sélectionnez *Modifier les paramètres de volume*.</block>
+  <block id="4ba141f8bd3c71509d32aaf3d8ae34d6" category="list-text">Pour NFS, vous pouvez modifier la taille et les balises.</block>
+  <block id="ad348a3307068da0d1c8c03655a0d11e" category="list-text">Pour CIFS, vous pouvez modifier le nom du partage, les utilisateurs, les autorisations et la stratégie Snapshot selon vos besoins.</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Sélectionnez *appliquer*.</block>
+  <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">Clones de volumes</block>
+  <block id="6b94d8d9a10c7d18376b9f389dba9855" category="paragraph">Une fois que vous avez créé un volume, vous pouvez créer un nouveau volume en lecture/écriture à partir d'une nouvelle copie Snapshot.</block>
+  <block id="d64b993d52f8a267e9dfb902139ad672" category="list-text">Sélectionnez *Cloner le volume*.</block>
+  <block id="5e5db467595563d87880b20fec615319" category="list-text">Entrez un nom pour le volume cloné.</block>
+  <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">Sélectionnez *Clone*.</block>
+  <block id="e479d2534f323a1275e2ed0809755e56" category="section-title">Gérer les copies Snapshot</block>
+  <block id="13d23436eebf5663e94f902e862ce3bb" category="paragraph">Les copies Snapshot fournissent une copie instantanée de votre volume. Création de copies Snapshot et restauration des données sur un nouveau volume.</block>
+  <block id="8b5f6e4263eafb9559eeaffe98711978" category="list-text">Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions de protection*.</block>
+  <block id="f5baa7ceb1673e19b71f0f856feee19a" category="list-text">Sélectionnez l'une des options disponibles pour gérer les copies Snapshot :</block>
+  <block id="77920e8d9473162a2167976898eaa180" category="list-text">*Créer une copie snapshot*</block>
+  <block id="fa41e2569b3e81d19868356601d4d103" category="list-text">*Restaurer à partir d'une copie snapshot*</block>
+  <block id="df95b2ddbeefe0bd257bae9d1c7d663a" category="list-text">Suivez les invites pour terminer l'action sélectionnée.</block>
+  <block id="9f4aa892debf403a854859b0ca9c9ff6" category="section-title">Modifiez la stratégie de hiérarchisation</block>
+  <block id="3a2ff6a4c845ba47894d1dd10a1b908f" category="paragraph">Modifiez la règle de Tiering du volume.</block>
+  <block id="f879ed761f1ca2475598c0bea304d10d" category="list-text">Ouvrez l'onglet volume et sélectionnez *gérer le volume* pour ouvrir le menu *actions avancées*.</block>
+  <block id="dedc9eb7ac0cb065a0b90f9f63104b01" category="list-text">Sélectionnez *Modifier la règle de hiérarchisation*.</block>
+  <block id="baef40813f00b62c8e9dcc643a76c881" category="list-text">Sélectionnez une nouvelle stratégie de hiérarchisation de volume et cliquez sur *Modifier*.</block>
+  <block id="016049d3662ab4f0c21871ed98f2bb37" category="section-title">Réplication et synchronisation des données</block>
+  <block id="abca63d751ec4cebd209af264e376ee4" category="inline-link">réplication des données entre les systèmes</block>
+  <block id="060dde3ca9c7d4e73cf9b65b84114028" category="paragraph">Vous pouvez répliquer des données entre différents environnements de stockage à l'aide de BlueXP. Pour configurer FSX pour la réplication ONTAP, reportez-vous à la section<block ref="063d7001b249d0164d3c6e7cd82a78db" category="inline-link-rx"></block>.</block>
+  <block id="35931d34af92c203401fd4bb760eb1cf" category="inline-link">création de relations synchronisées</block>
+  <block id="6b91242d31fee1e3576ce594b08573b5" category="paragraph">Vous pouvez créer des relations de synchronisation à l'aide de Cloud Sync dans BlueXP. Pour configurer des relations de synchronisation, voir<block ref="3bb02b9d4fba268ff940f67f5abfe3eb" category="inline-link-rx"></block>.</block>
+  <block id="f91674f3b22216fc484532cd24dda908" category="section-title">Supprimez des volumes</block>
+  <block id="9497c556620605c0441cf034ff68a527" category="paragraph">Supprimez les volumes dont vous n'avez plus besoin.</block>
+  <block id="f257be535aca4e5a3655fc2dd2887500" category="paragraph">Vous ne pouvez pas supprimer un volume qui faisait auparavant partie d'une relation SnapMirror en utilisant BlueXP. Les volumes SnapMirror doivent être supprimés via la console de gestion AWS ou l'interface de ligne de commande.</block>
+  <block id="f596a753aac59df7e240140c2eb96e99" category="list-text">Sélectionnez *Supprimer le volume*.</block>
+  <block id="56f7e1cad5439f90ac8bd08115c74e4a" category="list-text">Entrez le nom de l'environnement de travail et confirmez la suppression du volume. Il peut prendre jusqu'à une heure avant que le volume ne soit complètement supprimé de BlueXP.</block>
+  <block id="590368745da00a61c492e4b834d9568e" category="admonition">Si vous essayez de supprimer un volume cloné, une erreur s'affiche.</block>
+  <block id="27210695b4aa1995052b8f142c07c5f6" category="summary">Découvrez les nouveautés d'Amazon FSX pour ONTAP.</block>
+  <block id="a04f5ee3ae030d60ed2d9e76b7b821ff" category="doc">Nouveautés d'Amazon FSX pour ONTAP</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 septembre 2022</block>
+  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">Modifiez la capacité de stockage et les IOPS</block>
+  <block id="0e36458fd86c678ff613e05396096775" category="paragraph">C'est possible maintenant <block ref="0fb4d5e2ef1238fe0c2ee898e859399c" category="inline-link-macro-rx"></block> À tout moment après avoir créé l'environnement de travail FSX pour ONTAP.</block>
+  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 juillet 2022</block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">Si vous avez fourni vos identifiants AWS à Cloud Manager, la nouvelle fonctionnalité *Mes opportunités* peut détecter et suggérer FSX pour les systèmes de fichiers ONTAP à ajouter et à gérer via Cloud Manager. Vous pouvez également consulter les services de données disponibles via l'onglet *Mes opportunités*.</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">Découvrez FSX pour ONTAP à l'aide de Mes opportunités</block>
+  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">modification de la capacité de débit</block>
+  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">C'est possible maintenant <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> À tout moment après avoir créé l'environnement de travail FSX pour ONTAP.</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">réplication et synchronisation des données</block>
+  <block id="2e54b9a897181c7862d708807a350694" category="list-text">C'est possible maintenant <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> Vers les systèmes sur site et autres systèmes FSX pour ONTAP utilisant FSX pour ONTAP comme source.</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Créer des volumes iSCSI dans FSX pour ONTAP à l'aide de Cloud Manager</block>
+  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">C'est possible maintenant <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>.</block>
+  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">3 juillet 2022</block>
+  <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">Vous pouvez désormais sélectionner un modèle de déploiement HA à une ou plusieurs zones de disponibilité.</block>
+  <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">Créer un environnement de travail FSX pour ONTAP</block>
+  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
+  <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">L'authentification de compte AWS GovCloud est désormais prise en charge dans Cloud Manager.</block>
+  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">27 février 2022</block>
+  <block id="3152521594c71809f9c72383294b05b7" category="section-title">Assumer le rôle IAM</block>
+  <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">Lorsque vous créez un environnement de travail FSX pour ONTAP, vous devez maintenant fournir l'ARN d'un rôle IAM que Cloud Manager peut supposer pour créer un environnement de travail FSX pour ONTAP. Auparavant, vous aviez besoin de clés d'accès AWS.</block>
+  <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">Découvrez comment configurer des autorisations pour FSX pour ONTAP</block>
+  <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>.</block>
+  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 octobre 2021</block>
+  <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">Créez des volumes iSCSI à l'aide de l'API Cloud Manager</block>
+  <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">Vous pouvez créer des volumes iSCSI pour FSX pour ONTAP à l'aide de l'API Cloud Manager et les gérer dans votre environnement de travail.</block>
+  <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">Sélectionnez les unités de volume lors de la création de volumes</block>
+  <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">Sélectionnez une unité de volume (Gio ou Tio) lors de la création des volumes</block>
+  <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">C'est possible <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> Dans FSX pour ONTAP.</block>
+  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">4 octobre 2021</block>
+  <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">Créer des volumes CIFS à l'aide de Cloud Manager</block>
+  <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">Créer des volumes CIFS dans FSX pour ONTAP à l'aide de Cloud Manager</block>
+  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">Aujourd'hui c'est possible <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>.</block>
+  <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">Modifiez des volumes à l'aide de Cloud Manager</block>
+  <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">Modifiez FSX pour les volumes ONTAP à l'aide de Cloud Manager</block>
+  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">Aujourd'hui c'est possible <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>.</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2 septembre 2021</block>
+  <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">Prise en charge d'Amazon FSX pour ONTAP</block>
+  <block id="a0e08ea7f36fd675a07b353350648fbe" category="list-text"><block ref="040983c31c5d3aff2795da28b0ee5564" category="inline-link-macro-rx"></block> Est un service entièrement géré qui permet aux clients de lancer et d'exécuter des systèmes de fichiers optimisés par le système d'exploitation du stockage ONTAP de NetApp. FSX pour ONTAP offre les mêmes fonctionnalités, performances et administration que les clients NetApp utilisent l'environnement sur site, avec la simplicité, l'agilité, la sécurité et l'évolutivité d'un service AWS natif.</block>
+  <block id="b84e3c9bb4ac9216f14349e3b5be8ec3" category="paragraph"><block ref="173ddc048bd16ccfb71d77420d7581cb" category="inline-link-macro-rx"></block>.</block>
+  <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">Vous pouvez configurer un environnement de travail FSX pour ONTAP dans Cloud Manager.</block>
+  <block id="b7dd73bfb5bbb0ec2884525999924384" category="paragraph"><block ref="e85a369c316ea87dc3d5da27638bd157" category="inline-link-macro-rx"></block>.</block>
+  <block id="7965f44d9657c905774d8d427141b845" category="list-text">Grâce à un connecteur dans AWS et Cloud Manager, vous pouvez créer et gérer des volumes, répliquer des données et intégrer FSX pour ONTAP avec les services cloud NetApp, comme Data Sense et Cloud Sync.</block>
+  <block id="eddf71c2364cb70dc54a32723a344817" category="inline-link-macro">Lancez-vous avec Cloud Data Sense for Amazon FSX pour ONTAP</block>
+  <block id="d35e6fa404873b4a616b1313e98cf3d9" category="paragraph"><block ref="6e3374d20d69610b03c5ed3fa5af9a08" category="inline-link-macro-rx"></block>.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Droits d'auteur</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marques déposées</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, le logo NETAPP et les marques mentionnées sur la page des marques commerciales NetApp sont des marques commerciales de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques commerciales de leurs propriétaires respectifs.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Brevets</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Vous trouverez une liste actuelle des brevets appartenant à NetApp à l'adresse suivante :</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Politique de confidentialité</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
+  <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Note pour BlueXP</block>
+  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
+  <block id="72999cd653b12474752fb77bab9691e3" category="inline-link-macro">Notification relative à Cloud Backup</block>
+  <block id="75be9a02506771b87be972c89707f0d4" category="list-text"><block ref="75be9a02506771b87be972c89707f0d4" category="inline-link-macro-rx"></block></block>
+  <block id="bf6a36d1f8c7b0ef48e5a5b01357f720" category="inline-link-macro">Avis pour Cloud Sync</block>
+  <block id="c9c82aba1257ee6c6ebbade2353f0b0d" category="list-text"><block ref="c9c82aba1257ee6c6ebbade2353f0b0d" category="inline-link-macro-rx"></block></block>
+  <block id="a5e8ac089fe7eb702f683ce020dc2a2a" category="inline-link-macro">Notification relative à NetApp Cloud Tiering</block>
+  <block id="3754b5e44654d3dc7bfaa36f213a8795" category="list-text"><block ref="3754b5e44654d3dc7bfaa36f213a8795" category="inline-link-macro-rx"></block></block>
+  <block id="73f420c03909a74fdc36f2bebeb15d52" category="inline-link-macro">Notez qu'il est logique que les données du cloud s'accordent</block>
+  <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notes de mise à jour</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Démarrage rapide</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="sidebar">De formation</block>
+  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="sidebar">Configurez les autorisations</block>
+  <block id="390a3dfacd9551e05363b9eb09a0464c" category="sidebar">Règles de groupe de sécurité</block>
+  <block id="767c313289c6f36a3348709b853c6020" category="sidebar">Utilisez Amazon FSX pour ONTAP</block>
+  <block id="4654b99a0535f374a8ff766873df50a6" category="sidebar">Créer ou découvrir un environnement de travail</block>
+  <block id="3109e49414b9edf951cefa41b4e6edeb" category="sidebar">Gérer l'environnement de travail</block>
+  <block id="9be5a2eae9bab39aee7d0161c137cd43" category="sidebar">Création et montage de volumes</block>
+  <block id="ba96e9a97f70e26f5839a4ab40b0081b" category="sidebar">Gérez les volumes et les services de données</block>
+  <block id="74e5a199ea27b8b415c0c77d75229e79" category="sidebar">Configuration hôte NVMe et iSCSI</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Communauté sur les blogs</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Blog Cloud Central</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
+  <block id="69f7f21f4fc680b59f6e889bf9547523" category="sidebar">Documents Amazon FSX pour ONTAP</block>
+  <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">En savoir plus sur FSX pour ONTAP</block>
+  <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">Gérer un environnement de travail</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
+</blocks>

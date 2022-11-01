@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: use/task-manage-working-environment.html 
+keywords: amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, 
+summary: 'BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l"environnement de travail.' 
+---
+= Gérer un environnement de travail Amazon FSX pour ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l'environnement de travail.
+
+
+
+== Modification de la capacité de débit
+
+Vous pouvez modifier la capacité de débit à tout moment après la création de l'environnement de travail FSX pour ONTAP.
+
+Vous avez besoin d'un actif https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Connecteur dans AWS"^].
+
+.Étapes
+. Ouvrez l'environnement de travail FSX pour ONTAP.
+. Dans l'onglet *Présentation*, sélectionnez *fonctionnalités*.
+. Sélectionnez l'icône crayon (image:icon-pencil.png["Illustration de l'icône d'édition du crayon."]) Pour ouvrir la page d'édition *capacité de débit*.
++
+image:screenshot-change-thruput.png["Capture d'écran de l'emplacement du menu de modification de la capacité de débit."]
+
+. Sélectionnez une nouvelle capacité de débit dans la liste déroulante et sélectionnez *mettre à jour*. Cette modification peut prendre jusqu'à 25 minutes pour effet et n'interrompt pas l'accès aux données.
+
+
+
+
+== Modifiez la capacité de stockage et les IOPS
+
+Vous pouvez modifier la capacité de stockage et les IOPS à tout moment après la création de l'environnement de travail FSX pour ONTAP.
+
+Vous avez besoin d'un actif https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Connecteur dans AWS"^].
+
+.Étapes
+. Ouvrez l'environnement de travail FSX pour ONTAP.
+. Dans l'onglet *Présentation*, sélectionnez *fonctionnalités*.
+. Sélectionnez l'icône crayon (image:icon-pencil.png["Illustration de l'icône d'édition du crayon."]) Pour ouvrir la page de modification *capacité de stockage et IOPS*.
++
+image:screenshot-change-iops.png["Capture d'écran de l'emplacement du menu modification de la capacité de stockage et IOPS."]
+
+. Vous pouvez modifier la capacité de stockage et les IOPS toutes les six heures. Si vous tentez d'apporter des modifications plus fréquemment, une erreur s'affiche.
++
+image:screenshot-configure-iops.png["Capture d'écran de la page pour modifier la capacité de stockage et les valeurs d'IOPS."]
+
++
+[NOTE]
+====
+** Le taux d'utilisation maximal recommandé est de 80 % pour le maintien des performances du Tiering des données et la possibilité d'ajouter de la capacité pour des données supplémentaires.
+** La sélection de *Automatic* IOPS conserve un ratio de trois IOPS SSD provisionnées par Gio de stockage primaire jusqu'à 80,000. Vous ne pouvez pas provisionner manuellement une valeur d'IOPS supérieure ou égale à 80,000.
+
+
+====
+. Cochez la case pour confirmer que l'évolution de la capacité de stockage affecte le coût du service FSX pour ONTAP et que d'autres modifications ne peuvent pas être effectuées pendant six heures.
+. Sélectionnez *mettre à jour* pour confirmer vos modifications.
+
+
+
+
+== Supprimez FSX pour ONTAP de l'espace de travail
+
+Vous pouvez supprimer FSX pour ONTAP de BlueXP sans supprimer votre compte ou volumes FSX pour ONTAP. Vous pouvez à tout moment ajouter l'environnement de travail FSX pour ONTAP à BlueXP.
+
+.Étapes
+. Ouvrir l'environnement de travail. Si vous n'avez pas de connecteur dans AWS, l'écran d'invite s'affiche. Vous pouvez ignorer cette procédure et procéder à la suppression de l'environnement de travail.
+. Dans le coin supérieur droit de la page, sélectionnez le menu actions et sélectionnez *Supprimer de l'espace de travail*.
++
+image:screenshot_fsx_working_environment_remove.png["Capture d'écran de l'option de suppression pour FSX pour ONTAP à partir de l'interface BlueXP."]
+
+. Sélectionnez *Supprimer* pour supprimer FSX pour ONTAP de BlueXP.
+
+
+
+
+== Supprimez l'environnement de travail FSX pour ONTAP
+
+Vous pouvez supprimer FSX pour ONTAP de BlueXP.
+
+.Avant de commencer
+* Vous devez link:task-manage-fsx-volumes.html#delete-volumes["supprimez tous les volumes"] associé au système de fichiers.
+
+
+
+NOTE: Vous aurez besoin d'un connecteur actif dans AWS pour supprimer ou supprimer des volumes.
+
+* Vous ne pouvez pas supprimer un environnement de travail contenant des volumes ayant échoué. Les volumes défaillants doivent être supprimés via la console de gestion AWS ou l'interface de ligne de commande avant de supprimer FSX pour le système de fichiers ONTAP.
+
+
+
+WARNING: Cette action supprimera toutes les ressources associées à l'environnement de travail. Cette action ne peut pas être annulée.
+
+.Étapes
+. Ouvrir l'environnement de travail. Si vous n'avez pas de connecteur dans AWS, l'écran d'invite s'affiche. Vous pouvez ignorer cette procédure et supprimer l'environnement de travail.
+. Dans le coin supérieur droit de la page, sélectionnez le menu actions et sélectionnez *Supprimer*.
++
+image:screenshot_fsx_working_environment_delete.png["Capture d'écran de l'option de suppression pour FSX pour ONTAP à partir de l'interface BlueXP."]
+
+. Entrez le nom de l'environnement de travail et sélectionnez *Supprimer*.
+
