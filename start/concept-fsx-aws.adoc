@@ -31,7 +31,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 
 == Fonctions supplémentaires dans BlueXP
 
-* En utilisant un connecteur dans AWS et BlueXP (anciennement Cloud Manager), vous pouvez créer et gérer des volumes, répliquer des données et intégrer FSX pour ONTAP avec les services cloud NetApp, comme Data Sense et Cloud Sync.
+* À l'aide de link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^] (Anciennement Cloud Manager) et un connecteur dans AWS, vous pouvez créer et gérer des volumes, répliquer des données et intégrer FSX pour ONTAP avec les services cloud NetApp, tels que Data Sense et Cloud Sync.
 * Avec la technologie d'intelligence artificielle (IA), Cloud Data Sense peut vous aider à comprendre le contexte des données et à identifier les données sensibles qui résident dans votre FSX pour les comptes ONTAP. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["En savoir plus >>"^].
 * NetApp Cloud Sync automatise la migration des données vers n'importe quelle cible, dans le cloud ou sur site. https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["En savoir plus >>"^]
 
@@ -40,7 +40,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 
 == Le coût
 
-Votre compte FSX pour ONTAP est géré par AWS et non par BlueXP. https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Guide de mise en route d'Amazon FSX pour ONTAP"^]
+Votre compte FSX pour ONTAP est géré par AWS et non par BlueXP. Reportez-vous à la section https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Guide de mise en route d'Amazon FSX pour ONTAP"^].
 
 Des frais supplémentaires sont nécessaires pour l'utilisation du connecteur dans AWS et des services de données en option tels que Cloud Sync et Data Sense.
 

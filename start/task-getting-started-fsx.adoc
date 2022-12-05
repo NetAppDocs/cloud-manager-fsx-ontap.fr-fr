@@ -16,7 +16,11 @@ summary: Lancez-vous avec Amazon FSX pour ONTAP en quelques étapes.
 [role="lead"]
 Lancez-vous avec Amazon FSX pour ONTAP en quelques étapes.
 
-Vous pouvez commencer à utiliser FSX pour ONTAP en quelques étapes seulement.
+
+
+== Pas de temps
+
+À l'aide de link:https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP"^], Vous pouvez commencer avec FSX pour ONTAP en quelques étapes seulement.
 
 [role="quick-margin-para"]
 Vous devez créer un environnement de travail Amazon FSX pour ONTAP avant d'ajouter des volumes. Vous devez le faire link:../requirements/task-setting-up-permissions-fsx.html["Configurez un rôle IAM qui permet au service BlueXP SaaS de prendre en charge le rôle"].
