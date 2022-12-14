@@ -108,6 +108,7 @@ Vous pouvez créer des relations de synchronisation à l'aide de Cloud Sync dans
 
 Supprimez les volumes dont vous n'avez plus besoin.
 
+.Avant de commencer
 Vous ne pouvez pas supprimer un volume qui faisait auparavant partie d'une relation SnapMirror en utilisant BlueXP. Les volumes SnapMirror doivent être supprimés via la console de gestion AWS ou l'interface de ligne de commande.
 
 .Étapes

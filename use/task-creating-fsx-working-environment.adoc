@@ -22,6 +22,7 @@ BlueXP vous permet de créer ou de découvrir un environnement de travail FSX po
 
 La première étape consiste à créer un environnement de travail FSX pour ONTAP. Si vous avez déjà créé un système de fichiers FSX pour ONTAP dans la console de gestion AWS, vous pouvez link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Découvrez-le à l'aide de BlueXP"].
 
+.Avant de commencer
 Avant de créer votre environnement de travail FSX pour ONTAP dans BlueXP, vous aurez besoin des éléments suivants :
 
 * L'ARN d'un rôle IAM qui donne à BlueXP les autorisations nécessaires pour créer un environnement de travail FSX pour ONTAP. Voir link:../requirements/task-setting-up-permissions-fsx.html["Ajout d'identifiants AWS à BlueXP"] pour plus d'informations.
@@ -112,6 +113,7 @@ image:screenshot_add_fsx_review.png["Capture d'écran permettant de vérifier le
 
 
 
+.Résultat
 BlueXP affiche votre configuration FSX pour ONTAP sur la page Canvas.
 
 image:screenshot_add_fsx_cloud.png["Capture d'écran d'Amazon FSX pour ONTAP sur la page des environnements de travail."]
@@ -163,6 +165,7 @@ image:screenshot_fsx_working_environment_discover.png["Copie d'écran de la déc
 . Cliquez sur *Ajouter*.
 
 
+.Résultat
 BlueXP affiche le système de fichiers FSX détecté pour ONTAP.
 
 image:screenshot_fsx_working_environment_select.png["Capture d'écran indiquant la région AWS et l'environnement de travail"]

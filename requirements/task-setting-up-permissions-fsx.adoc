@@ -68,6 +68,7 @@ Afficher la règle de déploiement du connecteur depuis le link:https://mysuppor
 . Copiez le rôle ARN du rôle IAM afin de pouvoir le coller dans BlueXP à l'étape suivante.
 
 
+.Résultat
 Le rôle IAM dispose désormais des autorisations requises.
 
 
@@ -76,6 +77,7 @@ Le rôle IAM dispose désormais des autorisations requises.
 
 Une fois que vous avez autorisé le rôle IAM, ajoutez le rôle ARN à BlueXP.
 
+.Avant de commencer
 Si vous venez de créer le rôle IAM, l'utilisation peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
 
 .Étapes
@@ -103,6 +105,7 @@ image:screenshot-govcloud-checkbox.png["Capture d'écran de la case à cocher du
 
 
 
+.Résultat
 Vous pouvez maintenant utiliser les informations d'identification lors de la création d'un environnement de travail FSX pour ONTAP.
 
 

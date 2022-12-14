@@ -22,6 +22,7 @@ Une fois votre environnement de travail configuré, vous pouvez créer et monter
 
 Vous pouvez créer et gérer des volumes NFS, CIFS et iSCSI à partir de votre environnement de travail FSX pour ONTAP dans BlueXP. Les volumes créés à l'aide de l'interface de ligne de commande ONTAP seront également visibles dans votre environnement de travail FSX pour ONTAP.
 
+.Avant de commencer
 Éléments requis :
 
 * Un actif https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Connecteur dans AWS"^].
@@ -135,6 +136,7 @@ image:screenshot_fsx_volume_usage_tiering.png["Capture d'écran de la configurat
 . *Review* : passez en revue votre configuration de volume. Cliquez sur *Précédent* pour modifier les paramètres ou sur *Ajouter* pour créer le volume.
 
 
+.Résultat
 Le nouveau volume est ajouté à l'environnement de travail.
 
 
@@ -152,4 +154,5 @@ image:screenshot_fsx_volume_actions.png["Capture d'écran indiquant comment ouvr
 . Sélectionnez *Mount command* et suivez les instructions pour monter le volume.
 
 
+.Résultat
 Votre volume est maintenant monté sur l'hôte.

@@ -689,4 +689,15 @@
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Recherchez le numéro de série de l'ID de compte sur la page d'inscription au support.</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">Copiez le numéro de série de votre compte à l'étape 2 ci-dessus, vérifiez sa sécurité, puis lisez la Déclaration de confidentialité des données NetApp.</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Veillez à copier le numéro de série du compte (960xxxx) utilisé ci-dessus pour le champ Numéro de série. Le traitement du compte sera ainsi accéléré.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Avant de commencer</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Une seule</block>
+  <block id="bf3822c58db8aa1fbf20b9653ec5a67e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Créer un environnement de travail FSX pour ONTAP</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Deux</block>
+  <block id="70629c795585a51cd2dd42e29eb9110a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Créer un connecteur</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Trois</block>
+  <block id="5b7f3404157f78a543ff4be64d149a1a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Ajouter des volumes</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatre</block>
+  <block id="e05adacdd87d8db1102d0a9f547ca18a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Gérer vos volumes</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Une fois que vous avez terminé</block>
 </blocks>

@@ -24,6 +24,7 @@ Le groupe de sécurité FSX pour ONTAP requiert des règles entrantes et sortant
 
 image:diagram-fsx-security-groups.png["Schéma de la configuration FSX pour les groupes de sécurité ONTAP."]
 
+.Avant de commencer
 Vous devez localiser les groupes de sécurité associés à Enis à l'aide de la console de gestion AWS.
 
 .Étapes
