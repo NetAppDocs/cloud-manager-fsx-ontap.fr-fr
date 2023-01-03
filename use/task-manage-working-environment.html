@@ -9,15 +9,15 @@
   <meta property="og:title" content="Gérer un environnement de travail Amazon FSX pour ONTAP | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/fr-fr/cloud-manager-fsx-ontap/use/task-manage-working-environment.html" />
-	<meta property="og:description" content="BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer o..." />
+	<meta property="og:description" content="BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez activer la gestion automatique de la capacité, modifier le débit, la c..." />
   <meta property="og:image" content="https://docs.netapp.com/fr-fr/cloud-manager-fsx-ontap/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer o...">
-  <meta name="keywords" content=" amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput,"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez activer la gestion automatique de la capacité, modifier le débit, la c...">
+  <meta name="keywords" content=" amazon fsx for ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity"><!-- Icons -->
   <link rel="icon" href="/fr-fr/cloud-manager-fsx-ontap/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/fr-fr/cloud-manager-fsx-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -708,7 +708,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-14 18:26:22 +0000">12/14/2022</time>
+    <time datetime="2023-01-03 15:36:24 +0000">01/03/2023</time>
     
   
 
@@ -721,7 +721,102 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l&#8217;environnement de travail.</p>
+<p>BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez activer la gestion automatique de la capacité, modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l&#8217;environnement de travail.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="gérez-la-capacité-automatique">Gérez la capacité automatique</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez choisir d&#8217;activer la gestion automatique de la capacité pour ajouter du stockage incrémentiel à la demande. La gestion automatique de la capacité interroge le cluster à intervalles réguliers afin d&#8217;évaluer la demande et augmente automatiquement la capacité de stockage par incréments de 10 % jusqu&#8217;à 80 % de la capacité maximale du cluster.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Si vous n&#8217;avez pas spécifié manuellement une valeur d&#8217;IOPS dans l&#8217;environnement de travail, BlueXP augmentera les IOPS de 3 IOPS par Gio de la nouvelle capacité totale. Si vous avez spécifié une valeur IOPS, BlueXP n&#8217;ajuste pas les IOPS. Pour plus d&#8217;informations sur la configuration des IOPS, reportez-vous à la <a href="task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment">"créer un environnement de travail"</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>La gestion automatique de la capacité est désactivée par défaut. Vous pouvez gérer la capacité automatique avec ou sans connecteur actif dans AWS.</p>
+</div>
+<div class="sect2">
+<h3 id="gérez-la-capacité-automatique-sans-connecteur-actif">Gérez la capacité automatique sans connecteur actif</h3>
+<div class="paragraph">
+<p>Vous pouvez gérer la capacité automatique sans connecteur actif dans AWS.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Ouvrez l&#8217;environnement de travail FSX pour ONTAP.</p>
+</li>
+<li>
+<p>Sélectionnez l&#8217;icône de menu (<span class="image"><img src="../media/icon-three-dots.png" alt="Illustration de l&#8217;icône du menu à trois points."></span>) Et sélectionnez <strong>gérer la capacité automatique</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="../media/screenshot-auto-capacity-no-connector.png" alt="Capture d&#8217;écran du menu gérer la capacité automatique."></span></p>
+</div>
+</li>
+<li>
+<p>Sur la page <strong>gestion automatique de la capacité</strong> :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cochez la case pour activer la gestion automatique de la capacité.</p>
+</li>
+<li>
+<p>Décochez la case pour désactiver la gestion automatique de la capacité si elle était activée auparavant.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sélectionnez <strong>appliquer</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gérez-la-capacité-automatique-à-laide-dun-connecteur-actif">Gérez la capacité automatique à l&#8217;aide d&#8217;un connecteur actif</h3>
+<div class="paragraph">
+<p>Vous pouvez gérer la capacité automatique avec un connecteur actif dans AWS.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Ouvrez l&#8217;environnement de travail FSX pour ONTAP.</p>
+</li>
+<li>
+<p>Dans l&#8217;onglet <strong>Présentation</strong>, sélectionnez <strong>fonctionnalités</strong>.</p>
+</li>
+<li>
+<p>Sélectionnez l&#8217;icône crayon (<span class="image"><img src="../media/icon-pencil.png" alt="Illustration de l&#8217;icône d&#8217;édition du crayon."></span>) Pour ouvrir la page <strong>gestion automatique de la capacité</strong>.</p>
+</li>
+<li>
+<p>Sur la page <strong>gestion automatique de la capacité</strong> :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cochez la case pour activer la gestion automatique de la capacité.</p>
+</li>
+<li>
+<p>Décochez la case pour désactiver la gestion automatique de la capacité si elle était activée auparavant.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sélectionnez <strong>appliquer</strong>.</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>

@@ -708,7 +708,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-14 18:26:22 +0000">12/14/2022</time>
+    <time datetime="2023-01-03 15:36:24 +0000">01/03/2023</time>
     
   
 
@@ -739,9 +739,6 @@
 </li>
 <li>
 <p>Sous gestion des accès, cliquez sur <strong>rôles &gt; Créer un rôle</strong> et suivez les étapes pour créer le rôle.</p>
-<div class="paragraph">
-<p>Assurez-vous de faire ce qui suit :</p>
-</div>
 <div class="ulist">
 <ul>
 <li>
@@ -774,10 +771,12 @@
                 "fsx:*",
                 "ec2:Describe*",
                 "ec2:CreateTags",
+                "iam:CreateServiceLinkedRole",
                 "kms:Describe*",
                 "kms:List*",
                 "kms:CreateGrant",
-                "iam:CreateServiceLinkedRole"
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics"
             ],
             "Resource": "*"
         }
@@ -785,8 +784,17 @@
 }</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>Afficher la règle de déploiement du connecteur depuis le <a href="https://mysupport.netapp.com/site/info/cloud-manager-policies">"BlueXP stratégies"</a>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-fsx-ontap/images/note.svg" alt="Note">
+</td>
+<td class="content">
+<code>"cloudwatch:GetMetricData"</code> et <code>"cloudwatch:GetMetricStatistics"</code> sont nécessaires pour activer <a href="../use/task-manage-working-environment.html">"gestion automatique de la capacité"</a>.
+</td>
+</tr>
+</table>
 </div>
 </li>
 </ul>
