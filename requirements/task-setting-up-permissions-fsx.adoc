@@ -26,9 +26,6 @@ Configurez un rôle IAM qui permet à BlueXP d'assumer le rôle.
 . Accédez à la console IAM dans le compte cible.
 . Sous gestion des accès, cliquez sur *rôles > Créer un rôle* et suivez les étapes pour créer le rôle.
 +
-Assurez-vous de faire ce qui suit :
-
-+
 ** Sous *Type d'entité approuvée*, sélectionnez *compte AWS*.
 ** Sélectionnez *un autre compte AWS* et saisissez l'ID de BlueXP.
 +
@@ -50,10 +47,12 @@ Assurez-vous de faire ce qui suit :
                 "fsx:*",
                 "ec2:Describe*",
                 "ec2:CreateTags",
+                "iam:CreateServiceLinkedRole",
                 "kms:Describe*",
                 "kms:List*",
                 "kms:CreateGrant",
-                "iam:CreateServiceLinkedRole"
+                "cloudwatch:GetMetricData",
+                "cloudwatch:GetMetricStatistics"
             ],
             "Resource": "*"
         }
@@ -61,7 +60,8 @@ Assurez-vous de faire ce qui suit :
 }
 ----
 +
-Afficher la règle de déploiement du connecteur depuis le link:https://mysupport.netapp.com/site/info/cloud-manager-policies["BlueXP stratégies"].
+
+NOTE: `"cloudwatch:GetMetricData"` et `"cloudwatch:GetMetricStatistics"` sont nécessaires pour activer link:../use/task-manage-working-environment.html["gestion automatique de la capacité"].
 
 
 

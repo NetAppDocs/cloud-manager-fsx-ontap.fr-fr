@@ -187,14 +187,11 @@
   <block id="1db8d07619da1f12a7b920676f6769ae" category="paragraph">Configurez un rôle IAM qui permet à BlueXP d'assumer le rôle.</block>
   <block id="44030f19e52b4a03b050525f287bbc15" category="list-text">Accédez à la console IAM dans le compte cible.</block>
   <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">Sous gestion des accès, cliquez sur *rôles &gt; Créer un rôle* et suivez les étapes pour créer le rôle.</block>
-  <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">Assurez-vous de faire ce qui suit :</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">Sous *Type d'entité approuvée*, sélectionnez *compte AWS*.</block>
   <block id="c29858d9450fbef0a082acaa54d1bc6d" category="list-text">Sélectionnez *un autre compte AWS* et saisissez l'ID de BlueXP.</block>
   <block id="edcfddcfff54621c47b01eddd968a5b0" category="list-text">Pour BlueXP SaaS : 952013314444</block>
   <block id="319c3fdfa37c6b0ae4e91a351706489b" category="list-text">Pour AWS GovCloud (USA) : 033442085313</block>
   <block id="30c558b7179a7e55ad7f3ae5ca262466" category="list-text">Créez une stratégie qui inclut les autorisations suivantes :</block>
-  <block id="7ac66cbf6468d4b2ac580b0142eb7f7b" category="inline-link-macro">BlueXP stratégies</block>
-  <block id="a4b479a41ed7a914d0dd394ff19733d2" category="paragraph">Afficher la règle de déploiement du connecteur depuis le <block ref="6bc39dc7152091d002dd49afe75c9615" category="inline-link-macro-rx"></block>.</block>
   <block id="fa9df323148192800073dd2a78c81f73" category="list-text">Copiez le rôle ARN du rôle IAM afin de pouvoir le coller dans BlueXP à l'étape suivante.</block>
   <block id="d47c23803528fa45fad33a3f83dfcf54" category="paragraph">Le rôle IAM dispose désormais des autorisations requises.</block>
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">Ajoutez les informations d'identification</block>
@@ -400,7 +397,6 @@
   <block id="b43e642ae439f1f795292eb5df5f84d3" category="paragraph"><block ref="b43e642ae439f1f795292eb5df5f84d3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="78c27b88e2a8142906bb69594e5b22a6" category="list-text">Sélectionnez *Mount command* et suivez les instructions pour monter le volume.</block>
   <block id="35f5a704747f7e6644a0bbedc33a0c2e" category="paragraph">Votre volume est maintenant monté sur l'hôte.</block>
-  <block id="0aab21b00fa6135e62b29e7f8bb6778e" category="summary">BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l'environnement de travail.</block>
   <block id="faac9e60f93091e9068b8f347b36ec75" category="doc">Gérer un environnement de travail Amazon FSX pour ONTAP</block>
   <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">Modification de la capacité de débit</block>
   <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">Vous pouvez modifier la capacité de débit à tout moment après la création de l'environnement de travail FSX pour ONTAP.</block>
@@ -578,47 +574,33 @@
   <block id="a04f5ee3ae030d60ed2d9e76b7b821ff" category="doc">Nouveautés d'Amazon FSX pour ONTAP</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 septembre 2022</block>
   <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">Modifiez la capacité de stockage et les IOPS</block>
-  <block id="0e36458fd86c678ff613e05396096775" category="paragraph">C'est possible maintenant <block ref="0fb4d5e2ef1238fe0c2ee898e859399c" category="inline-link-macro-rx"></block> À tout moment après avoir créé l'environnement de travail FSX pour ONTAP.</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 juillet 2022</block>
   <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">Si vous avez fourni vos identifiants AWS à Cloud Manager, la nouvelle fonctionnalité *Mes opportunités* peut détecter et suggérer FSX pour les systèmes de fichiers ONTAP à ajouter et à gérer via Cloud Manager. Vous pouvez également consulter les services de données disponibles via l'onglet *Mes opportunités*.</block>
   <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">Découvrez FSX pour ONTAP à l'aide de Mes opportunités</block>
-  <block id="9480b8170649423ab940807a0b920da2" category="paragraph"><block ref="9480b8170649423ab940807a0b920da2" category="inline-link-macro-rx"></block></block>
   <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">modification de la capacité de débit</block>
-  <block id="c9937dd2be3306177e54f23d06f05522" category="list-text">C'est possible maintenant <block ref="506ff771d5601b67d5eec9e79bc3848f" category="inline-link-macro-rx"></block> À tout moment après avoir créé l'environnement de travail FSX pour ONTAP.</block>
   <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">réplication et synchronisation des données</block>
-  <block id="2e54b9a897181c7862d708807a350694" category="list-text">C'est possible maintenant <block ref="8a24fd2682d2561e3f75043a6b0c8221" category="inline-link-macro-rx"></block> Vers les systèmes sur site et autres systèmes FSX pour ONTAP utilisant FSX pour ONTAP comme source.</block>
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Créer des volumes iSCSI dans FSX pour ONTAP à l'aide de Cloud Manager</block>
-  <block id="d6d2f19a8b69e681e2faa33500bbff6c" category="list-text">C'est possible maintenant <block ref="7bd2232976707f7841c519f0d4d2c5a6" category="inline-link-macro-rx"></block>.</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">3 juillet 2022</block>
   <block id="f0e3a414b681f7ab90a3f742f40c9365" category="list-text">Vous pouvez désormais sélectionner un modèle de déploiement HA à une ou plusieurs zones de disponibilité.</block>
   <block id="324197c492971b6abe6108b6ed0e2722" category="inline-link-macro">Créer un environnement de travail FSX pour ONTAP</block>
-  <block id="28d4a8073a683a018eec6bfdec63098f" category="paragraph"><block ref="28d4a8073a683a018eec6bfdec63098f" category="inline-link-macro-rx"></block></block>
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">L'authentification de compte AWS GovCloud est désormais prise en charge dans Cloud Manager.</block>
-  <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">27 février 2022</block>
   <block id="3152521594c71809f9c72383294b05b7" category="section-title">Assumer le rôle IAM</block>
   <block id="1bae6acf64b673783a7e55db59c7f74e" category="paragraph">Lorsque vous créez un environnement de travail FSX pour ONTAP, vous devez maintenant fournir l'ARN d'un rôle IAM que Cloud Manager peut supposer pour créer un environnement de travail FSX pour ONTAP. Auparavant, vous aviez besoin de clés d'accès AWS.</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link-macro">Découvrez comment configurer des autorisations pour FSX pour ONTAP</block>
-  <block id="85f610955384d6c0dcae09552c4508e0" category="paragraph"><block ref="121317bac1802e026b9ea68cbe410489" category="inline-link-macro-rx"></block>.</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 octobre 2021</block>
   <block id="5b80dcfe3dbe5a2279a764bb895220e8" category="section-title">Créez des volumes iSCSI à l'aide de l'API Cloud Manager</block>
   <block id="c9901681b19037cfe4d776eb572a7a6b" category="paragraph">Vous pouvez créer des volumes iSCSI pour FSX pour ONTAP à l'aide de l'API Cloud Manager et les gérer dans votre environnement de travail.</block>
   <block id="1b06c7a9314e682b34302ac90d6d6650" category="section-title">Sélectionnez les unités de volume lors de la création de volumes</block>
   <block id="155385bf6757f064143eb321fbfd3bff" category="inline-link-macro">Sélectionnez une unité de volume (Gio ou Tio) lors de la création des volumes</block>
-  <block id="bdc6d93b4370ea76238df491d9d141c4" category="paragraph">C'est possible <block ref="88fc27d29fd6019ad989d255373b75d1" category="inline-link-macro-rx"></block> Dans FSX pour ONTAP.</block>
   <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">4 octobre 2021</block>
   <block id="2ac9dc8f932fa4bebfc31724e388e13a" category="section-title">Créer des volumes CIFS à l'aide de Cloud Manager</block>
   <block id="901f92bd8486511c3943b59dd9b9f6a4" category="inline-link-macro">Créer des volumes CIFS dans FSX pour ONTAP à l'aide de Cloud Manager</block>
-  <block id="8cb898147f5ef32e49709138a0ee48c6" category="paragraph">Aujourd'hui c'est possible <block ref="98c695f1949c26a2dd10f3c98347e43b" category="inline-link-macro-rx"></block>.</block>
   <block id="1664cbd7cbe0abbcd6d133e652cd42c1" category="section-title">Modifiez des volumes à l'aide de Cloud Manager</block>
   <block id="7a6930a21ad40feae487321aef61a969" category="inline-link-macro">Modifiez FSX pour les volumes ONTAP à l'aide de Cloud Manager</block>
-  <block id="b233fccd6a0e80b0628c8b760f808f80" category="paragraph">Aujourd'hui c'est possible <block ref="4f9c429b7c1519954500e41db7985c1c" category="inline-link-macro-rx"></block>.</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2 septembre 2021</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">Prise en charge d'Amazon FSX pour ONTAP</block>
-  <block id="a0e08ea7f36fd675a07b353350648fbe" category="list-text"><block ref="040983c31c5d3aff2795da28b0ee5564" category="inline-link-macro-rx"></block> Est un service entièrement géré qui permet aux clients de lancer et d'exécuter des systèmes de fichiers optimisés par le système d'exploitation du stockage ONTAP de NetApp. FSX pour ONTAP offre les mêmes fonctionnalités, performances et administration que les clients NetApp utilisent l'environnement sur site, avec la simplicité, l'agilité, la sécurité et l'évolutivité d'un service AWS natif.</block>
-  <block id="b84e3c9bb4ac9216f14349e3b5be8ec3" category="paragraph"><block ref="173ddc048bd16ccfb71d77420d7581cb" category="inline-link-macro-rx"></block>.</block>
   <block id="9d2704a937df8ec429bf2446953b2687" category="list-text">Vous pouvez configurer un environnement de travail FSX pour ONTAP dans Cloud Manager.</block>
-  <block id="b7dd73bfb5bbb0ec2884525999924384" category="paragraph"><block ref="e85a369c316ea87dc3d5da27638bd157" category="inline-link-macro-rx"></block>.</block>
   <block id="7965f44d9657c905774d8d427141b845" category="list-text">Grâce à un connecteur dans AWS et Cloud Manager, vous pouvez créer et gérer des volumes, répliquer des données et intégrer FSX pour ONTAP avec les services cloud NetApp, comme Data Sense et Cloud Sync.</block>
   <block id="eddf71c2364cb70dc54a32723a344817" category="inline-link-macro">Lancez-vous avec Cloud Data Sense for Amazon FSX pour ONTAP</block>
   <block id="d35e6fa404873b4a616b1313e98cf3d9" category="paragraph"><block ref="6e3374d20d69610b03c5ed3fa5af9a08" category="inline-link-macro-rx"></block>.</block>
@@ -697,4 +679,39 @@
   <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">C'est possible <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> Utilisation de BlueXP.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">Et la suite</block>
   <block id="dae3b13fec3bf110f92a7547c071e053" category="paragraph">Vous pouvez désormais utiliser BlueXP pour gérer vos volumes et configurer des services supplémentaires tels que la réplication, Cloud Sync et Data Sense.</block>
+  <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">01 janvier 2023</block>
+  <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">gestion automatique de la capacité</block>
+  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">Vous pouvez maintenant choisir d'activer <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> pour ajouter du stockage incrémentiel à la demande. La gestion automatique de la capacité interroge le cluster à intervalles réguliers afin d'évaluer la demande et augmente automatiquement la capacité de stockage par incréments de 10 % à 80 % de la capacité maximale du cluster.</block>
+  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">C'est possible maintenant <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> À tout moment après avoir créé l'environnement de travail FSX pour ONTAP.</block>
+  <block id="a83471208430f7fbd0630757d97c5142" category="paragraph"><block ref="a83471208430f7fbd0630757d97c5142" category="inline-link-macro-rx"></block></block>
+  <block id="6cd901297cf29a4b459f2cc11e68c6d6" category="list-text">C'est possible maintenant <block ref="697a0d5ee189fb6da3b3bef50626dd94" category="inline-link-macro-rx"></block> À tout moment après avoir créé l'environnement de travail FSX pour ONTAP.</block>
+  <block id="897d994d4d024883042e664eba152417" category="list-text">C'est possible maintenant <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> Vers les systèmes sur site et autres systèmes FSX pour ONTAP utilisant FSX pour ONTAP comme source.</block>
+  <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">C'est possible maintenant <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>.</block>
+  <block id="bee52cc88c0a721fa21705e43f975a38" category="paragraph"><block ref="bee52cc88c0a721fa21705e43f975a38" category="inline-link-macro-rx"></block></block>
+  <block id="68b4888c90bad97d83573c204e39d4f6" category="paragraph"><block ref="68b4888c90bad97d83573c204e39d4f6" category="inline-link-macro-rx"></block></block>
+  <block id="1a457abce740f74637d89636cb4bf465" category="paragraph"><block ref="b41a9efd67b5cf55cf548e8762fd5391" category="inline-link-macro-rx"></block>.</block>
+  <block id="878635d00100085ed9c73c84b23923a8" category="paragraph">C'est possible <block ref="7efe0bba09b9697b63e1ec0f00c0d9bb" category="inline-link-macro-rx"></block> Dans FSX pour ONTAP.</block>
+  <block id="b957b3c2b45d171475a7589df8173510" category="paragraph">Aujourd'hui c'est possible <block ref="e1e8315fc20ff9071c786150bb6a8fd4" category="inline-link-macro-rx"></block>.</block>
+  <block id="c3e1ff7fb2dc6fd7c64f15c4ce7d34e3" category="paragraph">Aujourd'hui c'est possible <block ref="1546ddd4150be40b2e31760299f6633d" category="inline-link-macro-rx"></block>.</block>
+  <block id="1deb64c5b7d1fce612c4ca0466dfa255" category="paragraph"><block ref="fdd32d934c03692704574175344c207a" category="inline-link-macro-rx"></block>.</block>
+  <block id="7a2732ff05563f251f1ac93ae2d0c9d5" category="paragraph"><block ref="22cb2c9bc18ba713f3606939a029b986" category="inline-link-macro-rx"></block>.</block>
+  <block id="6ba425a78c17896d93d28f52eaadb6f2" category="admonition"><block ref="350df107c59fa79663916b7955bbe306" prefix="" category="inline-code"></block> et<block ref="db68eaa323cf27d3f429647b32e5d91b" prefix=" " category="inline-code"></block> sont nécessaires pour activer <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>.</block>
+  <block id="9e6871113ad24ed3830e2e58ce51dfc4" category="summary">BlueXP vous permet de gérer votre environnement de travail FSX pour ONTAP. Vous pouvez activer la gestion automatique de la capacité, modifier le débit, la capacité de stockage et les IOPS, et supprimer ou supprimer l'environnement de travail.</block>
+  <block id="9123b1a896e43bd47ae8708d015514ba" category="section-title">Gérez la capacité automatique</block>
+  <block id="1c05e31e27d15b210cdcb01d01331c36" category="paragraph">Vous pouvez choisir d'activer la gestion automatique de la capacité pour ajouter du stockage incrémentiel à la demande. La gestion automatique de la capacité interroge le cluster à intervalles réguliers afin d'évaluer la demande et augmente automatiquement la capacité de stockage par incréments de 10 % jusqu'à 80 % de la capacité maximale du cluster.</block>
+  <block id="0b77a63f8ac25e1cd8509e906523f459" category="inline-link-macro">créer un environnement de travail</block>
+  <block id="0185df25abbf3744285dd03ec2704b86" category="admonition">Si vous n'avez pas spécifié manuellement une valeur d'IOPS dans l'environnement de travail, BlueXP augmentera les IOPS de 3 IOPS par Gio de la nouvelle capacité totale. Si vous avez spécifié une valeur IOPS, BlueXP n'ajuste pas les IOPS. Pour plus d'informations sur la configuration des IOPS, reportez-vous à la <block ref="54a688b79e41730a76924297f5ac42a6" category="inline-link-macro-rx"></block>.</block>
+  <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">La gestion automatique de la capacité est désactivée par défaut. Vous pouvez gérer la capacité automatique avec ou sans connecteur actif dans AWS.</block>
+  <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">Gérez la capacité automatique sans connecteur actif</block>
+  <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">Vous pouvez gérer la capacité automatique sans connecteur actif dans AWS.</block>
+  <block id="0550d13a80e42471343b954ee5c015ec" category="inline-image-macro">Illustration de l'icône du menu à trois points.</block>
+  <block id="aaf6fdbd2f99b44b18a3501978c7e4b5" category="list-text">Sélectionnez l'icône de menu (<block ref="166f5e453125f8a771e7eb7abd5877c7" category="inline-image-macro-rx" type="image"></block>) Et sélectionnez *gérer la capacité automatique*.</block>
+  <block id="eae78abc1ac9b9443e78946ea0ac6f62" category="inline-image-macro">Capture d'écran du menu gérer la capacité automatique.</block>
+  <block id="8568f4aa8725b5fac6d8be22b191626f" category="paragraph"><block ref="8568f4aa8725b5fac6d8be22b191626f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7c48e42b8eb4f773ff1ba4e512f8d941" category="list-text">Sur la page *gestion automatique de la capacité* :</block>
+  <block id="fc3a15f119ad5decc28ff415b2538e29" category="list-text">Cochez la case pour activer la gestion automatique de la capacité.</block>
+  <block id="b7e02100f637951d6f90e4991487480c" category="list-text">Décochez la case pour désactiver la gestion automatique de la capacité si elle était activée auparavant.</block>
+  <block id="d9299eb7664af835098dc63cf4cfa0a9" category="section-title">Gérez la capacité automatique à l'aide d'un connecteur actif</block>
+  <block id="24eab999bc6be3c2241c58c7aee7ae10" category="paragraph">Vous pouvez gérer la capacité automatique avec un connecteur actif dans AWS.</block>
+  <block id="938b92d62e3cd9d5d18b4db5abd32cfa" category="list-text">Sélectionnez l'icône crayon (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Pour ouvrir la page *gestion automatique de la capacité*.</block>
 </blocks>
