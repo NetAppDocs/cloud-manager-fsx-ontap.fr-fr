@@ -26,21 +26,9 @@
   <block id="adae5e92a515a3174e9058a6b8179a41" category="paragraph">Amazon FSX pour ONTAP est une solution AWS propriétaire. Pour toute question ou tout problème de support technique concernant votre système de fichiers AWS FSX, votre infrastructure ou toute solution AWS utilisant ce service, utilisez le centre de support de votre console AWS pour ouvrir un dossier de demande de support vers AWS. Sélectionnez le service “FSX pour ONTAP” et la catégorie appropriée. Fournissez les informations restantes nécessaires pour créer un dossier de demande de support AWS.</block>
   <block id="c38a4c52c19f29b55ed16af8a145fb57" category="paragraph">Pour les questions générales spécifiques aux micro-services BlueXP ou BlueXP, vous pouvez commencer par le chat en ligne BlueXP.</block>
   <block id="8ae3d71a6e8ab23cdfe061900ab42a08" category="paragraph">Pour les problèmes de support technique spécifiques à BlueXP ou aux micro-services, vous pouvez ouvrir un ticket de support NetApp à l'aide du numéro de série de votre compte BlueXP. Vous devez enregistrer votre numéro de série BlueXP pour activer le support.</block>
-  <block id="7a8c8dd27a87bf665545ae7d6521b93a" category="summary">Lancez-vous avec Amazon FSX pour ONTAP en quelques étapes.</block>
-  <block id="bf7ec532103402eaed4653738655f6ad" category="doc">Commencez avec Amazon FSX pour ONTAP</block>
   <block id="d2f0ad44b51fbd3850fad8307ea16aa3" category="inline-link-macro">Configurez un rôle IAM qui permet au service BlueXP SaaS de prendre en charge le rôle</block>
-  <block id="0120a6985fd9a638c32bf88c75ec0802" category="paragraph">Vous devez créer un environnement de travail Amazon FSX pour ONTAP avant d'ajouter des volumes. Vous devez le faire <block ref="29f60f4dfe0d122f0f86f855f5d0bde2" category="inline-link-macro-rx"></block>.</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">Connecteur pour AWS</block>
-  <block id="d7d767395bf3ee01260b8e372bdc033a" category="paragraph">Vous devez avoir un<block ref="ee4793145cbadfb90a826d44d7b7a098" category="inline-link-rx"></block> Pour ouvrir l'environnement de travail FSX pour ONTAP, créez des volumes ou effectuez d'autres actions. Lorsqu'un connecteur est nécessaire, BlueXP vous invite si un connecteur n'est pas déjà ajouté.</block>
-  <block id="17a1b5c516ad7934395e8ea2d41f50ed" category="paragraph">Vous pouvez créer FSX pour les volumes ONTAP à l'aide de BlueXP.</block>
-  <block id="a4f149004152f60637fdf95cdc81a47d" category="paragraph">Utilisez BlueXP pour gérer vos volumes et configurer des services supplémentaires tels que la réplication, Cloud Sync et Data Sense.</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Liens connexes</block>
-  <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">Création d'un connecteur depuis BlueXP</block>
-  <block id="0d5f53ba40b365132e5ed55aeb13bafc" category="list-text"><block ref="0d5f53ba40b365132e5ed55aeb13bafc" category="inline-link-rx"></block></block>
-  <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">Lancement d'un connecteur depuis AWS Marketplace</block>
-  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
-  <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">Installation du logiciel du connecteur sur un hôte Linux</block>
-  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
   <block id="9936779ebe4e0ac089fa89c319d5473b" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes que BlueXP et FSX pour ONTAP doivent fonctionner correctement. Vous pouvez vous référer aux ports à des fins de test ou si vous devez utiliser votre propre.</block>
   <block id="e87d6ed459b274ad7c388e0797013c9f" category="doc">Règles de groupe de sécurité pour FSX pour ONTAP</block>
   <block id="9f415057e43c73d4e37a0068a0ca9486" category="section-title">Règles pour FSX pour ONTAP</block>
@@ -679,7 +667,6 @@
   <block id="bff0ab4dab26d38051ade7a231a2a6f2" category="sidebar">En savoir plus sur FSX pour ONTAP</block>
   <block id="6faf2fd9ba5b0e89a953f43cd89d6c46" category="sidebar">Gérer un environnement de travail</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
-  <block id="8ea62d632a69911dcf193e9803b1195a" category="section-title">Pas de temps</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="inline-link-macro">BlueXP</block>
   <block id="a9272148ddd8493b835b5b0ed973a495" category="paragraph">À l'aide de <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block>, Vous pouvez commencer avec FSX pour ONTAP en quelques étapes seulement.</block>
   <block id="c8e7a79b3e62d2a377fbadb534f60c42" category="list-text">À l'aide de <block ref="ac523c62451e38c65aafdd45e2bf5230" category="inline-link-macro-rx"></block> (Anciennement Cloud Manager) et un connecteur dans AWS, vous pouvez créer et gérer des volumes, répliquer des données et intégrer FSX pour ONTAP avec les services cloud NetApp, tels que Data Sense et Cloud Sync.</block>
@@ -692,12 +679,22 @@
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Avant de commencer</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Une seule</block>
-  <block id="bf3822c58db8aa1fbf20b9653ec5a67e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Créer un environnement de travail FSX pour ONTAP</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Deux</block>
-  <block id="70629c795585a51cd2dd42e29eb9110a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Créer un connecteur</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Trois</block>
-  <block id="5b7f3404157f78a543ff4be64d149a1a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Ajouter des volumes</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatre</block>
-  <block id="e05adacdd87d8db1102d0a9f547ca18a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Gérer vos volumes</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Une fois que vous avez terminé</block>
+  <block id="94adfe266f613e087d05c9260eb004a5" category="summary">Utilisation de BlueXP, vous pouvez commencer à utiliser FSX pour ONTAP en quelques étapes seulement.</block>
+  <block id="adb9767d8972d81b2cb7885f361d86a1" category="doc">Démarrage rapide pour Amazon FSX pour ONTAP</block>
+  <block id="ff521b94ba57a25e6c791317a4a7c7b8" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Configurer un rôle IAM dans AWS</block>
+  <block id="a91c2d61396b40e96facf3415a6062b0" category="paragraph">Pour créer ou gérer un environnement de travail Amazon FSX for ONTAP, vous devez ajouter des informations d'identification AWS à BlueXP en fournissant l'ARN d'un rôle IAM qui donne à BlueXP les autorisations nécessaires pour créer un environnement de travail FSX for ONTAP. Pour ce faire, vous devez <block ref="29f60f4dfe0d122f0f86f855f5d0bde2" category="inline-link-macro-rx"></block>.</block>
+  <block id="f95c74952c0b72133feb54c45db4c89a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Créer un environnement de travail FSX pour ONTAP</block>
+  <block id="807fcae0a49a388e1e8c238bbd595f66" category="inline-link-macro">Créez un environnement de travail Amazon FSX pour ONTAP</block>
+  <block id="32d5affb3faac4a5daaa14ce4968df36" category="paragraph">Vous devez <block ref="bf0fc94fdc839c457f308b3d8824e401" category="inline-link-macro-rx"></block> avant d'ajouter des volumes.</block>
+  <block id="08668d46aa9ce2b52e7c349499a9f0a0" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Créez un connecteur pour AWS</block>
+  <block id="0e2c71dee315ea3ae0b3e253b0bb13c0" category="paragraph">Vous devez avoir un<block ref="06b487e1dd2b2618860abb4a038fd471" category="inline-link-rx"></block> Pour ouvrir l'environnement de travail FSX pour ONTAP, créez des volumes ou effectuez d'autres actions. Lorsqu'un connecteur est nécessaire, BlueXP vous invite si un connecteur n'est pas déjà actif.</block>
+  <block id="b681838283484e0b94906567a577ad47" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Ajouter et monter un volume</block>
+  <block id="4bd8fd698bf66b76447369f6d59d7e0f" category="inline-link-macro">Création et montage de FSX pour les volumes ONTAP</block>
+  <block id="3a994a785ff4b046a381ab2afb6d0e17" category="paragraph">C'est possible <block ref="c98786904f437c4c5be9aec70a11cbb2" category="inline-link-macro-rx"></block> Utilisation de BlueXP.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">Et la suite</block>
+  <block id="dae3b13fec3bf110f92a7547c071e053" category="paragraph">Vous pouvez désormais utiliser BlueXP pour gérer vos volumes et configurer des services supplémentaires tels que la réplication, Cloud Sync et Data Sense.</block>
 </blocks>
